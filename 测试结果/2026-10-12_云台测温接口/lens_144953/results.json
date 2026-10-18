@@ -1,0 +1,43 @@
+[
+  {
+    "phase": "initial",
+    "time": 1791787793.3231623,
+    "focus_mode": 0,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 19114
+  },
+  {
+    "phase": "zoom_2x",
+    "time": 1791787797.9785745,
+    "focus_mode": 0,
+    "zoom_position": 3520,
+    "magnification": 20,
+    "focus_position": 0
+  },
+  {
+    "phase": "manual_focus",
+    "time": 1791787801.9715192,
+    "focus_mode": 1,
+    "zoom_position": 3520,
+    "magnification": 20,
+    "focus_position": 15018
+  },
+  {
+    "phase": "one_shot_af",
+    "time": 1791787807.8675044,
+    "focus_mode": 1,
+    "zoom_position": 3520,
+    "magnification": 20,
+    "focus_position": 0
+  },
+  {
+    "phase": "restored",
+    "time": 1791787813.3399684,
+    "errors": [],
+    "focus_mode": 0,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 22528
+  }
+]

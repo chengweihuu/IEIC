@@ -1,0 +1,13 @@
+[h264 @ 0x5ca6118de180] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x5ca6118de180] decode_slice_header error
+[h264 @ 0x5ca6118de180] no frame!
+[h264 @ 0x5ca6118de180] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x5ca6118de180] decode_slice_header error
+[h264 @ 0x5ca6118de180] no frame!
+[h264 @ 0x5ca6118de180] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x5ca6118de180] decode_slice_header error
+[h264 @ 0x5ca6118de180] no frame!
+[swscaler @ 0x5ca611976e40] deprecated pixel format used, make sure you did set range correctly

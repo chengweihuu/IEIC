@@ -1,0 +1,106 @@
+-vsync is deprecated. Use -fps_mode
+Passing a number to -vsync is deprecated, use a string argument as described in the manual.
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!
+[h264 @ 0x6152593e5640] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x6152593e5640] decode_slice_header error
+[h264 @ 0x6152593e5640] no frame!

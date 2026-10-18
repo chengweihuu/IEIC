@@ -1,0 +1,24 @@
+[
+  {
+    "source": "visible",
+    "opened": true,
+    "read_ok": true,
+    "shape": [
+      1080,
+      1920,
+      3
+    ],
+    "elapsed_s": 1.054932191997068
+  },
+  {
+    "source": "thermal",
+    "opened": true,
+    "read_ok": true,
+    "shape": [
+      512,
+      640,
+      3
+    ],
+    "elapsed_s": 1.2108997440009261
+  }
+]

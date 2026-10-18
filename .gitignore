@@ -1,0 +1,7 @@
+.agents/
+.aws/
+.codex/
+__pycache__/
+*.py[cod]
+.DS_Store
+.local-private/

@@ -1,0 +1,182 @@
+/* offset    |  size */  type = struct RK_GAS01_msg_qry_return {
+/*    0      |     4 */    s_RK_GAS01_msg_head head;
+/*    4      |     1 */    BYTE gasId;
+/*    5      |     1 */    BYTE errorCode;
+/*    6      |     1 */    BYTE gasPower;
+/*    7      |     4 */    int gasdata;
+/*   11      |     1 */    BYTE crc;
+
+                           /* total size (bytes):   12 */
+                         }
+type = enum RK_GAS01_error_code : unsigned int {RK_GAS01_success, RK_GAS01_nocfg, RK_GAS01_nodata}
+type = enum RK_GAS01_QRY : unsigned int {RK_GAS01_QRYTemperature = 1, RK_GAS01_QRYHumidity, RK_GAS01_QRYTempAndHumid, RK_GAS01_QRYSmoke, RK_GAS01_QRYO2, RK_GAS01_QRYSF6, RK_GAS01_QRYO3, RK_GAS01_QRYPM25, RK_GAS01_QRYRainLevel, RK_GAS01_QRYCO, RK_GAS01_QRYCO2, RK_GAS01_QRYSO2, RK_GAS01_QRYCH4, RK_GAS01_QRYNO, RK_GAS01_QRYNO2, RK_GAS01_QRYC3HF7, RK_GAS01_QRYH2S, RK_GAS01_QRYH2, RK_GAS01_QRYCL2, RK_GAS01_QRYHF, RK_GAS01_QRYMAX}
+type = enum RK_GAS01_cmd : unsigned int {RK_GAS01_cmd_setconfig, RK_GAS01_cmd_qry, RK_GAS01_cmd_reboot}
+
+/home/root/robot:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+00000000005d76b8 <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xa70>:
+  5d76b8:	f9405fe0 	ldr	x0, [sp, #184]
+  5d76bc:	b8407000 	ldur	w0, [x0, #7]
+  5d76c0:	b900a7e0 	str	w0, [sp, #164]
+  5d76c4:	f9405fe0 	ldr	x0, [sp, #184]
+  5d76c8:	39401800 	ldrb	w0, [x0, #6]
+  5d76cc:	7100041f 	cmp	w0, #0x1
+  5d76d0:	54000101 	b.ne	5d76f0 <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xaa8>  // b.any
+  5d76d4:	b940a7e1 	ldr	w1, [sp, #164]
+  5d76d8:	2a0103e0 	mov	w0, w1
+  5d76dc:	531e7400 	lsl	w0, w0, #2
+  5d76e0:	0b010000 	add	w0, w0, w1
+  5d76e4:	531f7800 	lsl	w0, w0, #1
+  5d76e8:	b900a7e0 	str	w0, [sp, #164]
+  5d76ec:	1400001c 	b	5d775c <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xb14>
+  5d76f0:	f9405fe0 	ldr	x0, [sp, #184]
+  5d76f4:	39401800 	ldrb	w0, [x0, #6]
+  5d76f8:	71000c1f 	cmp	w0, #0x3
+  5d76fc:	54000161 	b.ne	5d7728 <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xae0>  // b.any
+  5d7700:	b940a7e0 	ldr	w0, [sp, #164]
+  5d7704:	528ccce1 	mov	w1, #0x6667                	// #26215
+  5d7708:	72acccc1 	movk	w1, #0x6666, lsl #16
+  5d770c:	9b217c01 	smull	x1, w0, w1
+  5d7710:	d360fc21 	lsr	x1, x1, #32
+  5d7714:	13027c21 	asr	w1, w1, #2
+  5d7718:	131f7c00 	asr	w0, w0, #31
+  5d771c:	4b000020 	sub	w0, w1, w0
+  5d7720:	b900a7e0 	str	w0, [sp, #164]
+  5d7724:	1400000e 	b	5d775c <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xb14>
+  5d7728:	f9405fe0 	ldr	x0, [sp, #184]
+  5d772c:	39401800 	ldrb	w0, [x0, #6]
+  5d7730:	7100101f 	cmp	w0, #0x4
+  5d7734:	54000141 	b.ne	5d775c <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xb14>  // b.any
+  5d7738:	b940a7e0 	ldr	w0, [sp, #164]
+  5d773c:	5290a3e1 	mov	w1, #0x851f                	// #34079
+  5d7740:	72aa3d61 	movk	w1, #0x51eb, lsl #16
+  5d7744:	9b217c01 	smull	x1, w0, w1
+  5d7748:	d360fc21 	lsr	x1, x1, #32
+  5d774c:	13057c21 	asr	w1, w1, #5
+  5d7750:	131f7c00 	asr	w0, w0, #31
+  5d7754:	4b000020 	sub	w0, w1, w0
+  5d7758:	b900a7e0 	str	w0, [sp, #164]
+  5d775c:	794147e0 	ldrh	w0, [sp, #162]
+  5d7760:	7100001f 	cmp	w0, #0x0
+  5d7764:	54001261 	b.ne	5d79b0 <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xd68>  // b.any
+  5d7768:	97f7f9e7 	bl	3d5f04 <Singleton<LogMgr>::Instance()>
+  5d776c:	52800002 	mov	w2, #0x0                   	// #0
+  5d7770:	52800061 	mov	w1, #0x3                   	// #3
+  5d7774:	97f7fa27 	bl	3d6010 <ManMgrBase<LogMgr, LogUtil*>::GetMan(int, int)>
+  5d7778:	f9006be0 	str	x0, [sp, #208]
+  5d777c:	f9406be0 	ldr	x0, [sp, #208]
+  5d7780:	f100001f 	cmp	x0, #0x0
+  5d7784:	540010e0 	b.eq	5d79a0 <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xd58>  // b.none
+  5d7788:	f9406be0 	ldr	x0, [sp, #208]
+  5d778c:	f9400000 	ldr	x0, [x0]
+  5d7790:	9100c000 	add	x0, x0, #0x30
+  5d7794:	f9400001 	ldr	x1, [x0]
+  5d7798:	f9406be0 	ldr	x0, [sp, #208]
+  5d779c:	d63f0020 	blr	x1
+  5d77a0:	12001c00 	and	w0, w0, #0xff
+  5d77a4:	7100001f 	cmp	w0, #0x0
+  5d77a8:	54000a40 	b.eq	5d78f0 <CPtlGasSensor_RK_GAS01::ParsePacket(RK_GAS01_msg_head*, int)+0xca8>  // b.none
+  5d77ac:	911803e0 	add	x0, sp, #0x600
+  5d77b0:	a908fc1f 	stp	xzr, xzr, [x0, #136]
+  5d77b4:	911a63e0 	add	x0, sp, #0x698
+  5d77b8:	d280fe01 	mov	x1, #0x7f0                 	// #2032
+  5d77bc:	aa0103e2 	mov	x2, x1
+  5d77c0:	52800001 	mov	w1, #0x0                   	// #0
+  5d77c4:	97f7885f 	bl	3b9940 <memset@plt>
+  5d77c8:	911a23e5 	add	x5, sp, #0x688
+  5d77cc:	900010a0 	adrp	x0, 7eb000 <rockbot::network::kMaxChannelNamePrefixLen+0xf4>
+  5d77d0:	910b2004 	add	x4, x0, #0x2c8
+  5d77d4:	900010a0 	adrp	x0, 7eb000 <rockbot::network::kMaxChannelNamePrefixLen+0xf4>
+  5d77d8:	91032003 	add	x3, x0, #0xc8
+  5d77dc:	900010a0 	adrp	x0, 7eb000 <rockbot::network::kMaxChannelNamePrefixLen+0xf4>
+  5d77e0:	91036002 	add	x2, x0, #0xd8
+  5d77e4:	d280ffe1 	mov	x1, #0x7ff                 	// #2047
+  5d77e8:	aa0503e0 	mov	x0, x5
+  5d77ec:	97f787e1 	bl	3b9770 <snprintf@plt>
+  5d77f0:	f9406be0 	ldr	x0, [sp, #208]
+  5d77f4:	f9400000 	ldr	x0, [x0]
+  5d77f8:	91004000 	add	x0, x0, #0x10
+  5d77fc:	f9400014 	ldr	x20, [x0]
+  5d7800:	528005e1 	mov	w1, #0x2f                  	// #47
+  5d7804:	900010a0 	adrp	x0, 7eb000 <rockbot::network::kMaxChannelNamePrefixLen+0xf4>
+  5d7808:	91038000 	add	x0, x0, #0xe0
+  5d780c:	97f78b3d 	bl	3ba500 <strrchr@plt>
+
+/home/root/robot:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000000715ebc <Tool::CalcCRC_CCITT(char*, int)>:
+  715ebc:	d10083ff 	sub	sp, sp, #0x20
+  715ec0:	f90007e0 	str	x0, [sp, #8]
+  715ec4:	b90007e1 	str	w1, [sp, #4]
+  715ec8:	b9001fff 	str	wzr, [sp, #28]
+  715ecc:	b94007e0 	ldr	w0, [sp, #4]
+  715ed0:	51000400 	sub	w0, w0, #0x1
+  715ed4:	b90007e0 	str	w0, [sp, #4]
+  715ed8:	b94007e0 	ldr	w0, [sp, #4]
+  715edc:	2a2003e0 	mvn	w0, w0
+  715ee0:	531f7c00 	lsr	w0, w0, #31
+  715ee4:	12001c00 	and	w0, w0, #0xff
+  715ee8:	7100001f 	cmp	w0, #0x0
+  715eec:	54000440 	b.eq	715f74 <Tool::CalcCRC_CCITT(char*, int)+0xb8>  // b.none
+  715ef0:	f94007e0 	ldr	x0, [sp, #8]
+  715ef4:	91000401 	add	x1, x0, #0x1
+  715ef8:	f90007e1 	str	x1, [sp, #8]
+  715efc:	39400000 	ldrb	w0, [x0]
+  715f00:	53185c00 	lsl	w0, w0, #8
+  715f04:	b9401fe1 	ldr	w1, [sp, #28]
+  715f08:	4a000020 	eor	w0, w1, w0
+  715f0c:	b9001fe0 	str	w0, [sp, #28]
+  715f10:	52800100 	mov	w0, #0x8                   	// #8
+  715f14:	39006fe0 	strb	w0, [sp, #27]
+  715f18:	b9401fe0 	ldr	w0, [sp, #28]
+  715f1c:	12110000 	and	w0, w0, #0x8000
+  715f20:	7100001f 	cmp	w0, #0x0
+  715f24:	540000e0 	b.eq	715f40 <Tool::CalcCRC_CCITT(char*, int)+0x84>  // b.none
+  715f28:	b9401fe0 	ldr	w0, [sp, #28]
+  715f2c:	531f7801 	lsl	w1, w0, #1
+  715f30:	52820420 	mov	w0, #0x1021                	// #4129
+  715f34:	4a000020 	eor	w0, w1, w0
+  715f38:	b9001fe0 	str	w0, [sp, #28]
+  715f3c:	14000004 	b	715f4c <Tool::CalcCRC_CCITT(char*, int)+0x90>
+  715f40:	b9401fe0 	ldr	w0, [sp, #28]
+  715f44:	531f7800 	lsl	w0, w0, #1
+  715f48:	b9001fe0 	str	w0, [sp, #28]
+  715f4c:	39406fe0 	ldrb	w0, [sp, #27]
+  715f50:	51000400 	sub	w0, w0, #0x1
+  715f54:	39006fe0 	strb	w0, [sp, #27]
+  715f58:	39406fe0 	ldrb	w0, [sp, #27]
+  715f5c:	7100001f 	cmp	w0, #0x0
+  715f60:	1a9f07e0 	cset	w0, ne  // ne = any
+  715f64:	12001c00 	and	w0, w0, #0xff
+  715f68:	7100001f 	cmp	w0, #0x0
+  715f6c:	54fffb00 	b.eq	715ecc <Tool::CalcCRC_CCITT(char*, int)+0x10>  // b.none
+  715f70:	17ffffea 	b	715f18 <Tool::CalcCRC_CCITT(char*, int)+0x5c>
+  715f74:	b9401fe0 	ldr	w0, [sp, #28]
+  715f78:	910083ff 	add	sp, sp, #0x20
+  715f7c:	d65f03c0 	ret
+
+0000000000715f80 <Tool::get_LASER_TOLERANCE()>:
+  715f80:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  715f84:	910003fd 	mov	x29, sp
+  715f88:	900011c0 	adrp	x0, 94d000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@GLIBCXX_3.4.21>
+  715f8c:	f9479800 	ldr	x0, [x0, #3888]
+  715f90:	f9400001 	ldr	x1, [x0]
+  715f94:	f9000fe1 	str	x1, [sp, #24]
+  715f98:	d2800001 	mov	x1, #0x0                   	// #0
+  715f9c:	b90017ff 	str	wzr, [sp, #20]
+  715fa0:	97f425ce 	bl	41f6d8 <DataSingleton<DataMgr1>::Instance()>
+  715fa4:	aa0003e5 	mov	x5, x0
+  715fa8:	910053e0 	add	x0, sp, #0x14
+  715fac:	aa0003e4 	mov	x4, x0
+192.168.1.132 dev eth1 lladdr 26:08:07:10:02:34 REACHABLE
+192.168.1.214 dev eth1 lladdr 86:75:ce:86:57:43 REACHABLE
+192.168.168.1 dev eth0  INCOMPLETE
+192.168.168.100 dev eth0 lladdr 4c:bb:47:51:28:9a REACHABLE
+192.168.1.33 dev eth1 lladdr 6c:24:08:17:ff:84 REACHABLE
+192.168.1.222 dev eth1 lladdr 08:48:57:18:d1:e6 STALE

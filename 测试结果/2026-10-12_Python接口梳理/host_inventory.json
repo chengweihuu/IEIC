@@ -1,0 +1,35 @@
+{
+  "host_120": {
+    "python": "3.8.10",
+    "board_reported": "NVIDIA Orin NX Developer Kit",
+    "ros": "Noetic",
+    "cv2": "4.2.0",
+    "numpy": "1.17.4",
+    "tensorrt": "8.5.2.2",
+    "torch_found_in_system_python": false,
+    "ultralytics_found_in_system_python": false,
+    "listeners": [
+      10010,
+      10088,
+      5000,
+      9981,
+      11311
+    ],
+    "port_9981_bind": "0.0.0.0"
+  },
+  "host_214": {
+    "python": "3.9.2",
+    "running_camera_process": "AJ_IR01",
+    "program_directory": "/home/rpdzkj/AJ-IR01-ROBOT",
+    "listeners_relevant": [
+      8554,
+      8556,
+      10086
+    ],
+    "ros_command_found": false,
+    "rospy_found_in_system_python": false,
+    "cv2_found_in_system_python": false,
+    "numpy_found_in_system_python": false
+  },
+  "scope": "Read-only inspection; no control commands or navigation service calls"
+}

@@ -1,0 +1,1238 @@
+[
+  {
+    "t": 0.031,
+    "kind": "release",
+    "response": "f0e0307505000f000000000ff1e1"
+  },
+  {
+    "t": 0.046,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 0.149,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.75,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 0.264,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.75,
+    "yaw": -0.32,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -32
+    }
+  },
+  {
+    "t": 0.387,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.24,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -24
+    }
+  },
+  {
+    "t": 0.497,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.66,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 0.647,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.66,
+    "yaw": -0.21,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -21
+    }
+  },
+  {
+    "t": 0.75,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.15,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -15
+    }
+  },
+  {
+    "t": 0.888,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.77,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 577,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 1.029,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.75,
+    "yaw": -0.32,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -32
+    }
+  },
+  {
+    "t": 1.147,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.3,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -30
+    }
+  },
+  {
+    "t": 1.251,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.28,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -28
+    }
+  },
+  {
+    "t": 1.424,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.69,
+    "yaw": -0.28,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -28
+    }
+  },
+  {
+    "t": 1.529,
+    "kind": "angle",
+    "phase": "before_pulse",
+    "pitch": 5.66,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 1.56,
+    "kind": "motion",
+    "yaw_speed": 1,
+    "pitch_speed": 0,
+    "response": "f0e0f87505000f000000000ff1e1"
+  },
+  {
+    "t": 1.624,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.73,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 1.683,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.73,
+    "yaw": -0.28,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -28
+    }
+  },
+  {
+    "t": 1.748,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.75,
+    "yaw": -0.26,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -26
+    }
+  },
+  {
+    "t": 1.825,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.73,
+    "yaw": -0.28,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -28
+    }
+  },
+  {
+    "t": 1.884,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.71,
+    "yaw": -0.24,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 1,
+      "yaw": -24
+    }
+  },
+  {
+    "t": 1.949,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.69,
+    "yaw": -0.24,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 1,
+      "yaw": -24
+    }
+  },
+  {
+    "t": 2.036,
+    "kind": "release",
+    "response": "f0e05c7605000f000000000ff1e1"
+  },
+  {
+    "t": 2.363,
+    "kind": "guard_release",
+    "response": "f0e0947505000f000000000ff1e1"
+  },
+  {
+    "t": 2.372,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.69,
+    "yaw": 0.19,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": 19
+    }
+  },
+  {
+    "t": 2.504,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.69,
+    "yaw": 0.17,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": 17
+    }
+  },
+  {
+    "t": 2.614,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.69,
+    "yaw": 0.19,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": 19
+    }
+  },
+  {
+    "t": 2.73,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.75,
+    "yaw": 0.17,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 4,
+      "yaw": 17
+    }
+  },
+  {
+    "t": 2.836,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.64,
+    "yaw": 0.13,
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 4,
+      "yaw": 13
+    }
+  },
+  {
+    "t": 2.964,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.08,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": 8
+    }
+  },
+  {
+    "t": 3.115,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.15,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": 15
+    }
+  },
+  {
+    "t": 3.231,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.69,
+    "yaw": 0.1,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": 10
+    }
+  },
+  {
+    "t": 3.337,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.21,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": 21
+    }
+  },
+  {
+    "t": 3.494,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.66,
+    "yaw": 0.08,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 4,
+      "yaw": 8
+    }
+  },
+  {
+    "t": 3.615,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.69,
+    "yaw": 0.13,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": 13
+    }
+  },
+  {
+    "t": 3.731,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.8,
+    "yaw": 0.1,
+    "data": {
+      "connect_status": 1,
+      "pitch": 580,
+      "total_status": 4,
+      "yaw": 10
+    }
+  },
+  {
+    "t": 3.832,
+    "kind": "pulse_result",
+    "index": 0,
+    "pitch_change": 0.14,
+    "yaw_change": 0.36
+  },
+  {
+    "t": 3.836,
+    "kind": "angle",
+    "phase": "before_pulse",
+    "pitch": 5.73,
+    "yaw": 0.13,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 4,
+      "yaw": 13
+    }
+  },
+  {
+    "t": 3.931,
+    "kind": "motion",
+    "yaw_speed": -1,
+    "pitch_speed": 0,
+    "response": "f0e0f97505000f000000000ff1e1"
+  },
+  {
+    "t": 3.932,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.69,
+    "yaw": 0.17,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": 17
+    }
+  },
+  {
+    "t": 4.031,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.69,
+    "yaw": 0.06,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": 6
+    }
+  },
+  {
+    "t": 4.132,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.75,
+    "yaw": 0.17,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 4,
+      "yaw": 17
+    }
+  },
+  {
+    "t": 4.236,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.71,
+    "yaw": 0.13,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": 13
+    }
+  },
+  {
+    "t": 4.336,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.69,
+    "yaw": 0.04,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 5,
+      "yaw": 4
+    }
+  },
+  {
+    "t": 4.449,
+    "kind": "release",
+    "response": "f0e05d7605000f000000000ff1e1"
+  },
+  {
+    "t": 4.658,
+    "kind": "guard_release",
+    "response": "f0e0957505000f000000000ff1e1"
+  },
+  {
+    "t": 4.742,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.66,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 4.854,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.73,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 4.958,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.69,
+    "yaw": -0.35,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -35
+    }
+  },
+  {
+    "t": 5.065,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.64,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 0,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 5.179,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.73,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 5.286,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.73,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 5.403,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.75,
+    "yaw": -0.35,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -35
+    }
+  },
+  {
+    "t": 5.543,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.69,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 5.659,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.66,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 5.803,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.77,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 577,
+      "total_status": 0,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 5.915,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.73,
+    "yaw": -0.32,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 4,
+      "yaw": -32
+    }
+  },
+  {
+    "t": 6.044,
+    "kind": "angle",
+    "phase": "after_pulse_1",
+    "pitch": 5.69,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 6.144,
+    "kind": "pulse_result",
+    "index": 1,
+    "pitch_change": -0.04,
+    "yaw_change": -0.52
+  },
+  {
+    "t": 6.16,
+    "kind": "angle",
+    "phase": "before_pulse",
+    "pitch": 5.75,
+    "yaw": -0.37,
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 4,
+      "yaw": -37
+    }
+  },
+  {
+    "t": 6.226,
+    "kind": "motion",
+    "yaw_speed": 0,
+    "pitch_speed": 1,
+    "response": "f0e0fa7505000f000000000ff1e1"
+  },
+  {
+    "t": 6.237,
+    "kind": "angle",
+    "phase": "pulse_2",
+    "pitch": 5.73,
+    "yaw": -0.37,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 4,
+      "yaw": -37
+    }
+  },
+  {
+    "t": 6.326,
+    "kind": "angle",
+    "phase": "pulse_2",
+    "pitch": 5.71,
+    "yaw": -0.35,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": -35
+    }
+  },
+  {
+    "t": 6.426,
+    "kind": "angle",
+    "phase": "pulse_2",
+    "pitch": 5.69,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 6.483,
+    "kind": "angle",
+    "phase": "pulse_2",
+    "pitch": 5.73,
+    "yaw": -0.39,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 4,
+      "yaw": -39
+    }
+  },
+  {
+    "t": 6.537,
+    "kind": "angle",
+    "phase": "pulse_2",
+    "pitch": 5.69,
+    "yaw": -0.37,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -37
+    }
+  },
+  {
+    "t": 6.627,
+    "kind": "angle",
+    "phase": "pulse_2",
+    "pitch": 5.73,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 5,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 6.738,
+    "kind": "release",
+    "response": "f0e05e7605000f000000000ff1e1"
+  },
+  {
+    "t": 6.981,
+    "kind": "guard_release",
+    "response": "f0e0967505000f000000000ff1e1"
+  },
+  {
+    "t": 7.014,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.19,
+    "yaw": -0.46,
+    "data": {
+      "connect_status": 1,
+      "pitch": 619,
+      "total_status": 1,
+      "yaw": -46
+    }
+  },
+  {
+    "t": 7.138,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.19,
+    "yaw": -0.46,
+    "data": {
+      "connect_status": 1,
+      "pitch": 619,
+      "total_status": 0,
+      "yaw": -46
+    }
+  },
+  {
+    "t": 7.245,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.19,
+    "yaw": -0.41,
+    "data": {
+      "connect_status": 1,
+      "pitch": 619,
+      "total_status": 0,
+      "yaw": -41
+    }
+  },
+  {
+    "t": 7.382,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.21,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 621,
+      "total_status": 0,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 7.538,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.21,
+    "yaw": -0.52,
+    "data": {
+      "connect_status": 1,
+      "pitch": 621,
+      "total_status": 0,
+      "yaw": -52
+    }
+  },
+  {
+    "t": 7.646,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.24,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 624,
+      "total_status": 0,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 7.814,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.19,
+    "yaw": -0.41,
+    "data": {
+      "connect_status": 1,
+      "pitch": 619,
+      "total_status": 0,
+      "yaw": -41
+    }
+  },
+  {
+    "t": 7.939,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.19,
+    "yaw": -0.48,
+    "data": {
+      "connect_status": 1,
+      "pitch": 619,
+      "total_status": 4,
+      "yaw": -48
+    }
+  },
+  {
+    "t": 8.047,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.15,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 615,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 8.24,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.17,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 617,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 8.344,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.21,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 621,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 8.447,
+    "kind": "angle",
+    "phase": "after_pulse_2",
+    "pitch": 6.21,
+    "yaw": -0.48,
+    "data": {
+      "connect_status": 1,
+      "pitch": 621,
+      "total_status": 4,
+      "yaw": -48
+    }
+  },
+  {
+    "t": 8.547,
+    "kind": "pulse_result",
+    "index": 2,
+    "pitch_change": 0.46,
+    "yaw_change": -0.11
+  },
+  {
+    "t": 8.55,
+    "kind": "angle",
+    "phase": "before_pulse",
+    "pitch": 6.17,
+    "yaw": -0.54,
+    "data": {
+      "connect_status": 1,
+      "pitch": 617,
+      "total_status": 4,
+      "yaw": -54
+    }
+  },
+  {
+    "t": 8.579,
+    "kind": "motion",
+    "yaw_speed": 0,
+    "pitch_speed": -1,
+    "response": "f0e0fb7505000f000000000ff1e1"
+  },
+  {
+    "t": 8.644,
+    "kind": "angle",
+    "phase": "pulse_3",
+    "pitch": 6.15,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 615,
+      "total_status": 4,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 8.745,
+    "kind": "angle",
+    "phase": "pulse_3",
+    "pitch": 6.24,
+    "yaw": -0.46,
+    "data": {
+      "connect_status": 1,
+      "pitch": 624,
+      "total_status": 4,
+      "yaw": -46
+    }
+  },
+  {
+    "t": 8.845,
+    "kind": "angle",
+    "phase": "pulse_3",
+    "pitch": 6.24,
+    "yaw": -0.43,
+    "data": {
+      "connect_status": 1,
+      "pitch": 624,
+      "total_status": 4,
+      "yaw": -43
+    }
+  },
+  {
+    "t": 8.911,
+    "kind": "angle",
+    "phase": "pulse_3",
+    "pitch": 6.21,
+    "yaw": -0.48,
+    "data": {
+      "connect_status": 1,
+      "pitch": 621,
+      "total_status": 5,
+      "yaw": -48
+    }
+  },
+  {
+    "t": 9.011,
+    "kind": "angle",
+    "phase": "pulse_3",
+    "pitch": 6.06,
+    "yaw": -0.57,
+    "data": {
+      "connect_status": 1,
+      "pitch": 606,
+      "total_status": 5,
+      "yaw": -57
+    }
+  },
+  {
+    "t": 9.124,
+    "kind": "release",
+    "response": "f0e05f7605000f000000000ff1e1"
+  },
+  {
+    "t": 9.368,
+    "kind": "guard_release",
+    "response": "f0e0977505000f000000000ff1e1"
+  },
+  {
+    "t": 9.446,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.64,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 9.548,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.69,
+    "yaw": -0.52,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -52
+    }
+  },
+  {
+    "t": 9.652,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.71,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 9.756,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.69,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 9.869,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.69,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 9.97,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.62,
+    "yaw": -0.54,
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 4,
+      "yaw": -54
+    }
+  },
+  {
+    "t": 10.089,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.64,
+    "yaw": -0.54,
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 4,
+      "yaw": -54
+    }
+  },
+  {
+    "t": 10.249,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.69,
+    "yaw": -0.52,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -52
+    }
+  },
+  {
+    "t": 10.352,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.66,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 10.47,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.69,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 10.589,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.71,
+    "yaw": -0.5,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 10.699,
+    "kind": "angle",
+    "phase": "after_pulse_3",
+    "pitch": 5.71,
+    "yaw": -0.48,
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 4,
+      "yaw": -48
+    }
+  },
+  {
+    "t": 10.8,
+    "kind": "pulse_result",
+    "index": 3,
+    "pitch_change": -0.46,
+    "yaw_change": 0.06
+  },
+  {
+    "t": 10.8,
+    "kind": "completed",
+    "initial": [
+      5.69,
+      -0.28
+    ],
+    "final": [
+      5.71,
+      -0.48
+    ]
+  },
+  {
+    "t": 10.863,
+    "kind": "final_release",
+    "response": "f0e0177905000f000000000ff1e1"
+  }
+]

@@ -1,0 +1,2022 @@
+[
+  {
+    "t": 0.074,
+    "kind": "release",
+    "response": "f0e08a9005000f000000000ff1e1"
+  },
+  {
+    "t": 0.102,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -118
+    }
+  },
+  {
+    "t": 0.21,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -116
+    }
+  },
+  {
+    "t": 0.313,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -116
+    }
+  },
+  {
+    "t": 0.432,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -109
+    }
+  },
+  {
+    "t": 0.566,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 0,
+      "yaw": -114
+    }
+  },
+  {
+    "t": 0.669,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -116
+    }
+  },
+  {
+    "t": 0.775,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -118
+    }
+  },
+  {
+    "t": 0.932,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -114
+    }
+  },
+  {
+    "t": 1.048,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -114
+    }
+  },
+  {
+    "t": 1.166,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 0,
+      "yaw": -114
+    }
+  },
+  {
+    "t": 1.27,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -116
+    }
+  },
+  {
+    "t": 1.404,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 0,
+      "yaw": -120
+    }
+  },
+  {
+    "t": 1.548,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -120
+    }
+  },
+  {
+    "t": 1.664,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -120
+    }
+  },
+  {
+    "t": 1.767,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 0,
+      "yaw": -112
+    }
+  },
+  {
+    "t": 1.868,
+    "kind": "baseline",
+    "pitch": 5.675000000000001,
+    "yaw": -1.18,
+    "target_yaw": 18.82
+  },
+  {
+    "t": 1.92,
+    "kind": "start_motion",
+    "response": "f0e08b9005000f000000000ff1e1"
+  },
+  {
+    "t": 1.948,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 0,
+      "yaw": -123
+    }
+  },
+  {
+    "t": 2.052,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 0,
+      "yaw": -116
+    }
+  },
+  {
+    "t": 2.165,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 0,
+      "yaw": -118
+    }
+  },
+  {
+    "t": 2.268,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 1,
+      "yaw": -125
+    }
+  },
+  {
+    "t": 2.37,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 1,
+      "yaw": -105
+    }
+  },
+  {
+    "t": 2.559,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 1,
+      "yaw": -85
+    }
+  },
+  {
+    "t": 2.665,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 1,
+      "yaw": -70
+    }
+  },
+  {
+    "t": 2.768,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 1,
+      "yaw": -70
+    }
+  },
+  {
+    "t": 2.87,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 1,
+      "yaw": -61
+    }
+  },
+  {
+    "t": 2.971,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 5,
+      "yaw": -50
+    }
+  },
+  {
+    "t": 3.119,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 5,
+      "yaw": -41
+    }
+  },
+  {
+    "t": 3.268,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 5,
+      "yaw": -19
+    }
+  },
+  {
+    "t": 3.37,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": -15
+    }
+  },
+  {
+    "t": 3.519,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 0
+    }
+  },
+  {
+    "t": 3.648,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 5,
+      "yaw": 8
+    }
+  },
+  {
+    "t": 3.769,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 32
+    }
+  },
+  {
+    "t": 3.871,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 37
+    }
+  },
+  {
+    "t": 4.025,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 46
+    }
+  },
+  {
+    "t": 4.169,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 68
+    }
+  },
+  {
+    "t": 4.271,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 76
+    }
+  },
+  {
+    "t": 4.459,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 94
+    }
+  },
+  {
+    "t": 4.57,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 5,
+      "yaw": 103
+    }
+  },
+  {
+    "t": 4.672,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 107
+    }
+  },
+  {
+    "t": 4.788,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 5,
+      "yaw": 123
+    }
+  },
+  {
+    "t": 4.97,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 140
+    }
+  },
+  {
+    "t": 5.072,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 158
+    }
+  },
+  {
+    "t": 5.221,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 164
+    }
+  },
+  {
+    "t": 5.371,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 5,
+      "yaw": 175
+    }
+  },
+  {
+    "t": 5.472,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 184
+    }
+  },
+  {
+    "t": 5.654,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 5,
+      "yaw": 208
+    }
+  },
+  {
+    "t": 5.771,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 221
+    }
+  },
+  {
+    "t": 5.873,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 5,
+      "yaw": 224
+    }
+  },
+  {
+    "t": 5.982,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 239
+    }
+  },
+  {
+    "t": 6.172,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 259
+    }
+  },
+  {
+    "t": 6.273,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 261
+    }
+  },
+  {
+    "t": 6.382,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 276
+    }
+  },
+  {
+    "t": 6.495,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 285
+    }
+  },
+  {
+    "t": 6.673,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 298
+    }
+  },
+  {
+    "t": 6.793,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 320
+    }
+  },
+  {
+    "t": 6.895,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 5,
+      "yaw": 322
+    }
+  },
+  {
+    "t": 7.005,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 338
+    }
+  },
+  {
+    "t": 7.157,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 1,
+      "yaw": 353
+    }
+  },
+  {
+    "t": 7.274,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 355
+    }
+  },
+  {
+    "t": 7.393,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 1,
+      "yaw": 369
+    }
+  },
+  {
+    "t": 7.537,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 1,
+      "yaw": 375
+    }
+  },
+  {
+    "t": 7.658,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 1,
+      "yaw": 402
+    }
+  },
+  {
+    "t": 7.774,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 1,
+      "yaw": 408
+    }
+  },
+  {
+    "t": 7.894,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 413
+    }
+  },
+  {
+    "t": 8.058,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 1,
+      "yaw": 435
+    }
+  },
+  {
+    "t": 8.169,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 1,
+      "yaw": 443
+    }
+  },
+  {
+    "t": 8.275,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 450
+    }
+  },
+  {
+    "t": 8.424,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 470
+    }
+  },
+  {
+    "t": 8.559,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 569,
+      "total_status": 5,
+      "yaw": 481
+    }
+  },
+  {
+    "t": 8.669,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 489
+    }
+  },
+  {
+    "t": 8.775,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 5,
+      "yaw": 505
+    }
+  },
+  {
+    "t": 8.956,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 520
+    }
+  },
+  {
+    "t": 9.059,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 520
+    }
+  },
+  {
+    "t": 9.17,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 540
+    }
+  },
+  {
+    "t": 9.276,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 547
+    }
+  },
+  {
+    "t": 9.408,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 560
+    }
+  },
+  {
+    "t": 9.538,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 5,
+      "yaw": 571
+    }
+  },
+  {
+    "t": 9.657,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 588
+    }
+  },
+  {
+    "t": 9.76,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 588
+    }
+  },
+  {
+    "t": 9.87,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 610
+    }
+  },
+  {
+    "t": 10.008,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 617
+    }
+  },
+  {
+    "t": 10.139,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 635
+    }
+  },
+  {
+    "t": 10.258,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 5,
+      "yaw": 641
+    }
+  },
+  {
+    "t": 10.36,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 5,
+      "yaw": 648
+    }
+  },
+  {
+    "t": 10.471,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 659
+    }
+  },
+  {
+    "t": 10.609,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 5,
+      "yaw": 674
+    }
+  },
+  {
+    "t": 10.768,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 685
+    }
+  },
+  {
+    "t": 10.871,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 564,
+      "total_status": 5,
+      "yaw": 696
+    }
+  },
+  {
+    "t": 10.979,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 5,
+      "yaw": 709
+    }
+  },
+  {
+    "t": 11.11,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 727
+    }
+  },
+  {
+    "t": 11.212,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 5,
+      "yaw": 742
+    }
+  },
+  {
+    "t": 11.369,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 742
+    }
+  },
+  {
+    "t": 11.472,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 755
+    }
+  },
+  {
+    "t": 11.61,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 566,
+      "total_status": 1,
+      "yaw": 771
+    }
+  },
+  {
+    "t": 11.746,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 786
+    }
+  },
+  {
+    "t": 11.869,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 1,
+      "yaw": 791
+    }
+  },
+  {
+    "t": 11.972,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 804
+    }
+  },
+  {
+    "t": 12.077,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 810
+    }
+  },
+  {
+    "t": 12.211,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 828
+    }
+  },
+  {
+    "t": 12.37,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 1,
+      "yaw": 843
+    }
+  },
+  {
+    "t": 12.472,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 1,
+      "yaw": 852
+    }
+  },
+  {
+    "t": 12.578,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 1,
+      "yaw": 863
+    }
+  },
+  {
+    "t": 12.723,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 876
+    }
+  },
+  {
+    "t": 12.87,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 887
+    }
+  },
+  {
+    "t": 12.973,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 900
+    }
+  },
+  {
+    "t": 13.078,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 909
+    }
+  },
+  {
+    "t": 13.262,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 927
+    }
+  },
+  {
+    "t": 13.371,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 942
+    }
+  },
+  {
+    "t": 13.473,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 951
+    }
+  },
+  {
+    "t": 13.611,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 1,
+      "yaw": 966
+    }
+  },
+  {
+    "t": 13.762,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 1,
+      "yaw": 973
+    }
+  },
+  {
+    "t": 13.872,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 562,
+      "total_status": 1,
+      "yaw": 984
+    }
+  },
+  {
+    "t": 13.973,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 999
+    }
+  },
+  {
+    "t": 14.094,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 1,
+      "yaw": 1008
+    }
+  },
+  {
+    "t": 14.212,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 1,
+      "yaw": 1023
+    }
+  },
+  {
+    "t": 14.322,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 1,
+      "yaw": 1032
+    }
+  },
+  {
+    "t": 14.473,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 5,
+      "yaw": 1043
+    }
+  },
+  {
+    "t": 14.612,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 5,
+      "yaw": 1056
+    }
+  },
+  {
+    "t": 14.757,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 5,
+      "yaw": 1063
+    }
+  },
+  {
+    "t": 14.874,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 560,
+      "total_status": 5,
+      "yaw": 1078
+    }
+  },
+  {
+    "t": 15.013,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 5,
+      "yaw": 1094
+    }
+  },
+  {
+    "t": 15.174,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 5,
+      "yaw": 1111
+    }
+  },
+  {
+    "t": 15.291,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1120
+    }
+  },
+  {
+    "t": 15.413,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 553,
+      "total_status": 5,
+      "yaw": 1135
+    }
+  },
+  {
+    "t": 15.522,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 5,
+      "yaw": 1149
+    }
+  },
+  {
+    "t": 15.674,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1157
+    }
+  },
+  {
+    "t": 15.814,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 5,
+      "yaw": 1173
+    }
+  },
+  {
+    "t": 15.958,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 5,
+      "yaw": 1188
+    }
+  },
+  {
+    "t": 16.075,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 549,
+      "total_status": 5,
+      "yaw": 1199
+    }
+  },
+  {
+    "t": 16.215,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 5,
+      "yaw": 1212
+    }
+  },
+  {
+    "t": 16.375,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1226
+    }
+  },
+  {
+    "t": 16.492,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 553,
+      "total_status": 5,
+      "yaw": 1234
+    }
+  },
+  {
+    "t": 16.615,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 553,
+      "total_status": 5,
+      "yaw": 1250
+    }
+  },
+  {
+    "t": 16.723,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1261
+    }
+  },
+  {
+    "t": 16.876,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 5,
+      "yaw": 1272
+    }
+  },
+  {
+    "t": 17.016,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 553,
+      "total_status": 5,
+      "yaw": 1287
+    }
+  },
+  {
+    "t": 17.159,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1305
+    }
+  },
+  {
+    "t": 17.276,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 5,
+      "yaw": 1316
+    }
+  },
+  {
+    "t": 17.417,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1329
+    }
+  },
+  {
+    "t": 17.576,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 5,
+      "yaw": 1335
+    }
+  },
+  {
+    "t": 17.714,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 558,
+      "total_status": 1,
+      "yaw": 1362
+    }
+  },
+  {
+    "t": 17.817,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 555,
+      "total_status": 1,
+      "yaw": 1368
+    }
+  },
+  {
+    "t": 17.925,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 1,
+      "yaw": 1373
+    }
+  },
+  {
+    "t": 18.036,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1382
+    }
+  },
+  {
+    "t": 18.176,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1399
+    }
+  },
+  {
+    "t": 18.325,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 1,
+      "yaw": 1410
+    }
+  },
+  {
+    "t": 18.436,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1423
+    }
+  },
+  {
+    "t": 18.56,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 1,
+      "yaw": 1439
+    }
+  },
+  {
+    "t": 18.677,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1447
+    }
+  },
+  {
+    "t": 18.861,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 5,
+      "yaw": 1465
+    }
+  },
+  {
+    "t": 18.969,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 549,
+      "total_status": 5,
+      "yaw": 1474
+    }
+  },
+  {
+    "t": 19.077,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1489
+    }
+  },
+  {
+    "t": 19.191,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1491
+    }
+  },
+  {
+    "t": 19.371,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1509
+    }
+  },
+  {
+    "t": 19.477,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 549,
+      "total_status": 5,
+      "yaw": 1527
+    }
+  },
+  {
+    "t": 19.582,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 5,
+      "yaw": 1524
+    }
+  },
+  {
+    "t": 19.692,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1540
+    }
+  },
+  {
+    "t": 19.799,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 553,
+      "total_status": 1,
+      "yaw": 1546
+    }
+  },
+  {
+    "t": 19.915,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 549,
+      "total_status": 1,
+      "yaw": 1566
+    }
+  },
+  {
+    "t": 20.078,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1579
+    }
+  },
+  {
+    "t": 20.193,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1586
+    }
+  },
+  {
+    "t": 20.315,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 549,
+      "total_status": 1,
+      "yaw": 1601
+    }
+  },
+  {
+    "t": 20.428,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1617
+    }
+  },
+  {
+    "t": 20.578,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1630
+    }
+  },
+  {
+    "t": 20.693,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1636
+    }
+  },
+  {
+    "t": 20.829,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1652
+    }
+  },
+  {
+    "t": 20.95,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1663
+    }
+  },
+  {
+    "t": 21.079,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 1,
+      "yaw": 1683
+    }
+  },
+  {
+    "t": 21.194,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 551,
+      "total_status": 1,
+      "yaw": 1683
+    }
+  },
+  {
+    "t": 21.35,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1698
+    }
+  },
+  {
+    "t": 21.463,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1705
+    }
+  },
+  {
+    "t": 21.579,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 1,
+      "yaw": 1724
+    }
+  },
+  {
+    "t": 21.726,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 1,
+      "yaw": 1735
+    }
+  },
+  {
+    "t": 21.851,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 5,
+      "yaw": 1749
+    }
+  },
+  {
+    "t": 21.963,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1751
+    }
+  },
+  {
+    "t": 22.068,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1773
+    }
+  },
+  {
+    "t": 22.18,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1781
+    }
+  },
+  {
+    "t": 22.351,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1799
+    }
+  },
+  {
+    "t": 22.464,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1806
+    }
+  },
+  {
+    "t": 22.569,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1821
+    }
+  },
+  {
+    "t": 22.68,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1832
+    }
+  },
+  {
+    "t": 22.784,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 5,
+      "yaw": 1847
+    }
+  },
+  {
+    "t": 22.889,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 540,
+      "total_status": 1,
+      "yaw": 1854
+    }
+  },
+  {
+    "t": 23.074,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1865
+    }
+  },
+  {
+    "t": 23.103,
+    "kind": "release",
+    "response": "f0e08c9005000f000000000ff1e1"
+  },
+  {
+    "t": 23.134,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 1,
+      "yaw": 1880
+    }
+  },
+  {
+    "t": 23.275,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 1,
+      "yaw": 1883
+    }
+  },
+  {
+    "t": 23.38,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 1,
+      "yaw": 1900
+    }
+  },
+  {
+    "t": 23.485,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 536,
+      "total_status": 0,
+      "yaw": 1900
+    }
+  },
+  {
+    "t": 23.666,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 549,
+      "total_status": 0,
+      "yaw": 1900
+    }
+  },
+  {
+    "t": 23.775,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 536,
+      "total_status": 0,
+      "yaw": 1902
+    }
+  },
+  {
+    "t": 23.881,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 4,
+      "yaw": 1905
+    }
+  },
+  {
+    "t": 24.015,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 538,
+      "total_status": 4,
+      "yaw": 1900
+    }
+  },
+  {
+    "t": 24.167,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 4,
+      "yaw": 1896
+    }
+  },
+  {
+    "t": 24.276,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 538,
+      "total_status": 4,
+      "yaw": 1900
+    }
+  },
+  {
+    "t": 24.381,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 547,
+      "total_status": 4,
+      "yaw": 1898
+    }
+  },
+  {
+    "t": 24.498,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 4,
+      "yaw": 1902
+    }
+  },
+  {
+    "t": 24.616,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 538,
+      "total_status": 4,
+      "yaw": 1889
+    }
+  },
+  {
+    "t": 24.732,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 544,
+      "total_status": 4,
+      "yaw": 1907
+    }
+  },
+  {
+    "t": 24.877,
+    "kind": "angle",
+    "data": {
+      "connect_status": 1,
+      "pitch": 542,
+      "total_status": 4,
+      "yaw": 1891
+    }
+  },
+  {
+    "t": 24.978,
+    "kind": "completed",
+    "initial": [
+      5.675000000000001,
+      -1.18
+    ],
+    "final": [
+      5.42,
+      18.990000000000002
+    ],
+    "yaw_change": 20.17
+  },
+  {
+    "t": 25.038,
+    "kind": "final_release",
+    "response": "f0e08d9005000f000000000ff1e1"
+  }
+]

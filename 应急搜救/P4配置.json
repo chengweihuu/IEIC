@@ -1,0 +1,17 @@
+{
+  "source": "rk_log",
+  "channel": "CO",
+  "unit": "software_value",
+  "threshold": 1.0,
+  "comparison": "high",
+  "rule_purpose": "integration_test_only",
+  "log_path": "/home/root/log/other.log",
+  "wait_timeout_s": 75,
+  "max_age_s": 90,
+  "future_tolerance_s": 5,
+  "repeat_warning_s": 60,
+  "speak": true,
+  "speech_timeout_s": 30,
+  "audio_device": "plughw:CARD=MCP01,DEV=0",
+  "output_dir": "p4_results"
+}

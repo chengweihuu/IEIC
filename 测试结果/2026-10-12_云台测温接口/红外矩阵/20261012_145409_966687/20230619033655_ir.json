@@ -1,0 +1,17 @@
+{
+  "source": "/home/hcw-09/USST/Project/IEIC_2026/测试结果/2026-10-12_云台测温接口/红外矩阵/20261012_145409_966687/20230619033655_ir.fir",
+  "csv": "/home/hcw-09/USST/Project/IEIC_2026/测试结果/2026-10-12_云台测温接口/红外矩阵/20261012_145409_966687/20230619033655_ir.csv",
+  "width": 640,
+  "height": 512,
+  "pixels": 327680,
+  "unit": "degC",
+  "storage_step_degC": 0.1,
+  "min_degC": 26.1,
+  "max_degC": 28.4,
+  "mean_degC": 27.227244873046875,
+  "header_min_degC": 26.135000228881836,
+  "header_max_degC": 28.433000564575195,
+  "row_order": "FIR file order; SDK rows reversed by vendor exporter",
+  "image_alignment_verified": false,
+  "measurement_accuracy_verified": false
+}

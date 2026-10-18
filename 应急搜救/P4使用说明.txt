@@ -1,0 +1,217 @@
+P4 传感器异常检测、位置记录与警告模块
+
+部署文件：p4_gas_alarm.py 和 P4配置.json。Python 3.8+，仅标准库。
+模块接受传感器读数，按显式配置的阈值判断，记录机器人观测位置，保存 JSON/CSV，
+并可调用 .120 上已经验证过的离线中文 TTS 和扬声器发出警告。
+不需要热相机、图像融合或定位算法；位置由调用方传入。
+
+一、当前设备接入状态
+
+当前按用户要求暂用 CO 开展联调，默认配置已经接到 .120 的本地气体日志。
+现场确认实际传感器后，再调整配置或对应读取适配器。
+默认临时规则：CO 的 software_value >= 1 触发“联调警告”。
+数值 1 是为了验证软件流程设置的临时阈值，不是 ppm，不是浓度安全限值。
+之前的真实 CO 样例均为 0，不会触发这条规则；不能因此认定环境安全。
+
+最简单调用方式：
+
+    from p4_gas_alarm import GasAlarmDetector
+
+    detector = GasAlarmDetector.from_config()  # 初始化一次，读取同目录 P4配置.json
+    result = detector.detect(
+        task_id='gas_check_001',
+        checkpoint_id='gas_point_A',
+        location_label='检测点A',
+        robot_pose={'x': 5.0, 'y': 3.0, 'yaw': 0.8},
+    )
+
+默认开启语音；在 .120 上等待一条新的 CO 日志，然后判断、记录并按需播报。
+初始化不会访问传感器。运行账户需要能够读取 /home/root/log/other.log。
+相对 output_dir 和 log_path 均相对配置文件目录解释，不受启动工作目录影响。
+直接运行（会等待新日志，触发时实际发声）：
+
+    python3 p4_gas_alarm.py --checkpoint-id A --location-label 检测点A --pose 5 3 0.8
+
+--no-speak 可只记录不播放；--threshold 2 可临时覆盖联调阈值。
+也可以使用 GasAlarmDetector.from_config(threshold=2, speak=False)。
+修改配置后需要重新初始化对象，已有对象不会自动热加载。
+
+现场主要调整 P4配置.json 中的：
+  channel、unit、threshold、comparison：通道、单位、阈值和比较方向。
+  source、log_path、wait_timeout_s：读取方式、日志路径和等待时限。
+  speak、repeat_warning_s：是否发声、重复告警间隔。
+  rule_purpose：当前为 integration_test_only，结果和播报明确标记联调用途。
+  确认实际规则后可设 user_configured；这个标记本身不代表已经标定或验收。
+
+已有文件实际确认了 RK_GAS01 的 CO、O2、temperature、humidity 四类读数解析。
+它们目前是 software_value 软件内部值，物理单位和测量有效性尚未确认。
+现有日志解析不能读取 VOC；不能把 CO/O2 或温湿度改名为 VOC 来完成赛项。
+本模块给 VOC 留出了直接接入现成读取函数或标准读数字典的入口。
+真正的 VOC 实机入口、单位、告警阈值需要由传感器资料或实际返回数据确认。
+没有内置真实气体的安全阈值；当前预设仅供 CO 软件值联调。
+如果现场仍使用上述已知日志通道，可修改配置中的通道和相应规则。
+如果更换为 VOC 或不同协议：需要真实读取函数，不能只把 channel 改名为 VOC。
+此时配置 source='external'，配置正确通道/单位/阈值，再调用
+GasAlarmDetector.from_config(reader=read_sensor)；detect 接口保持不变。
+
+二、有现成读取函数时（适用于 VOC 等）
+
+    from p4_gas_alarm import GasAlarmDetector
+
+    # read_sensor 是实际传感器适配函数，返回下一节定义的读数字典。
+    # alarm_threshold、sensor_unit 必须填写已确认的配置值。
+    detector = GasAlarmDetector(
+        channel='VOC',
+        threshold=alarm_threshold,
+        unit=sensor_unit,
+        reader=read_sensor,
+        output_dir='/home/robot/p4_results',
+        speak=True,
+    )
+
+    result = detector.detect(
+        task_id='gas_check_001',
+        checkpoint_id='gas_point_A',
+        location_label='检测点A',
+        robot_pose={'x': 5.0, 'y': 3.0, 'yaw': 0.8},
+    )
+
+调用时机器人应停稳，在传感器采样期间保持位置不变。
+模块记录的是“传感器在此处观察到异常”的位置，不定位气体泄漏源。
+初始化一次，之后复用同一个 detector。无需编写或修改整场状态机。
+reader 自己需要设置设备 I/O 超时；模块不能中断一个任意的、永久阻塞的 Python 函数。
+同一实例并发调用返回 busy。
+
+如果调用方已经读到了数据，也可以不设置 reader，直接：
+
+    result = detector.detect('gas_check_001', robot_pose=pose,
+                             checkpoint_id='gas_point_A', sample=reading)
+
+三、读数字典要求
+
+必填字段：
+  channel：准确的传感器通道名，与配置完全一致，例如 VOC。
+  value：有限的 Python int/float，不能为 NaN、无穷大或字符串。
+  unit：与阈值一致的准确单位，不能隐式把软件值当成 ppm 等物理单位。
+  valid：只有适配层确认该条数据可用于规则判断时才为 True；预热/故障等应返回 False。
+  sample_id：标识实际采样的一条稳定 ID；重复读取同一采样必须保持 ID 不变。
+  observed_at：采样/源记录时间，带时区的 ISO 格式。
+
+可选字段：
+  source：数据来源标识。
+  timestamp_basis：时间来源，例如 sensor_clock 或 host_receive_time。
+  measurement_verified：是否经过物理单位/测量有效性确认；默认 False。
+  其他原始字段保存在 raw_sample.txt，方便复盘。
+
+示例结构（仅示意，不能使用模拟数值作为真实检测）：
+
+    {
+        'channel': 'VOC',
+        'value': 12.0,
+        'unit': 'test_unit',
+        'valid': True,
+        'sample_id': 'synthetic_001',
+        'observed_at': '2026-10-12T13:00:00+08:00',
+        'source': 'synthetic_fixture',
+        'measurement_verified': False,
+    }
+
+不能每次读取旧缓存时重新生成 sample_id 或把 observed_at 改为当前时间。
+默认超过 90 秒的读数或超前当前时钟 5 秒以上的读数返回 error/unknown。
+相同 sample_id 在当前实例的同一种运行模式下不能重复使用，防止给旧读数绑定新的位置。
+实机模式下时间早于最近有效读数的乱序数据也会被拒绝，避免旧正常读数清除新告警。
+直接传入 sample 时，robot_pose 应对应该次采样位置，不能将移动前的读数绑定到移动后的坐标。
+更换实际传感器时应使用包含设备标识的 sample_id，或新建检测对象。
+
+四、直接复用当前 .120 的已验证气体日志
+
+模块部署在写日志的同一台 .120 主机，用其本地文件读取，不需要 SSH：
+
+    from p4_gas_alarm import GasAlarmDetector, RKGasLogReader
+
+    reader = RKGasLogReader(
+        channel='CO',
+        log_path='/home/root/log/other.log',
+        timeout_s=75,
+    )
+    detector = GasAlarmDetector(
+        channel='CO',
+        unit='software_value',
+        threshold=configured_software_threshold,
+        reader=reader,
+        speak=True,
+    )
+
+下面的手动构造方式与当前 CO 预设等价，但需自行提供 configured_software_threshold。
+CO 临时接入不代表 VOC 功能已通过。
+O2、temperature、humidity 同样使用 software_value，暂不自动换算物理单位。
+底层解析保留既有软件缩放、校验和检查、设备错误码检查。
+valid=True 在这个适配器中仅表示协议解析有效；measurement_verified=False。
+播报会明确说“软件读数”，不会把它当成已标定浓度。
+
+每次调用从当前文件末尾开始，等待新的对应通道回复，避免使用到点前的旧日志。
+支持日志替换和截断，超时没有新数据时返回 unknown，不返回零或“正常”。
+本适配器假定日志时间和运行模块的时钟来自同一主机，时间戳不是探头曝光/采样硬件时间。
+不要把复制下来的历史日志当作现场实时源；使用下述离线回放验证逻辑。
+旧测试同一通道大约一分钟更新一次；这条接入路线不能保证捕捉短暂气体异常。
+运行账户需要能读取日志文件；模块不修改权限、传感器或设备配置。
+
+五、阈值与报警行为
+
+comparison='high'：value >= threshold 触发，默认。
+comparison='low'：value <= threshold 触发。
+直接构造 GasAlarmDetector 时，threshold、unit、channel 必须显式配置；
+from_config() 读取文件中明确填写的 CO 临时联调配置。
+返回 not_triggered 只表示没触发这条配置规则，不表示环境安全。
+
+每次异常都记录位置、读数、原始数据、阈值和时间。
+开启 speak=True 后播报读数及配置阈值告警；同一检查点同一段持续异常默认 60 秒内不重播。
+repeat_warning_s=0 可让每条新的异常采样都播报。
+未触发规则的新鲜有效读数会结束当前告警；之后再次异常创建新 alarm_id 并播报。
+错误、过期、无数据不会清除既有告警。
+不同检查点分别记录告警，不将它们合并成一个泄漏源。
+播报失败不会抹掉异常结果，下次有效异常读数会再次尝试。
+
+detector.reset() 开始新会话并清空内存中的重复记录，不删除已有证据。
+重建对象或重启程序也会清空历史；需要保留抑制行为时复用同一个实例。
+P2 和 P4 使用同一扬声器时，调用方应顺序安排播报，避免多个进程同时占用声卡。
+
+六、返回结果
+
+status：ok / error / busy。
+anomaly：True 为触发规则，False 为未触发，None 为无法判断。
+decision：threshold_triggered / not_triggered / unknown。
+sample：规范化读数，包含单位、采样 ID、时间和来源。
+observation_pose / frame_id：机器人观测位置，不是泄漏源位置。
+location_valid：是否传入了有限数值的位置，不验证定位精度。
+alarm_id：同一检查点持续告警的事件编号；未触发时为 None。
+warning_text：异常警告文本，关闭声音时也返回文本供调用方使用。
+speech_status：success / failed / suppressed_repeated / not_requested / not_needed / disabled_for_replay。
+warning_emitted：本次是否完成实际播放调用；抑制重播时为 False。
+evidence：result.json、reading.json、reading.csv、raw_sample.txt，以及成功播报时的 warning.wav。
+warnings：软件单位未验证、语音失败等说明。
+error：无法判断的原因。
+
+status=ok 仍可能伴随 speech_status=failed；集成人员应分别检查异常判断与发声结果。
+播报执行成功不替代现场确认扬声器可听到。
+模块保存本地数据证据，不自动上传，也不执行物理处置动作。
+
+七、离线验证
+
+附带 P4离线样例.json 明确标记为模拟 CO 软件值 2，不是真实传感器证据。
+在本目录执行（不会访问传感器或播放声音）：
+
+    python3 p4_gas_alarm.py --sample-json P4离线样例.json --replay --pose 5 3 0.8
+
+使用默认 CO 预设，2 >= 1 应返回 anomaly=True，只验证规则、记录和告警文本。
+--replay 必须显式提供样例，跳过历史时间的新鲜度判断；位置仅作为回放元数据。
+离线与实机的告警历史隔离；回放不会抑制后续实际告警。
+历史样例不带 --replay 时会因过期被拒绝。
+
+从工作区运行测试：
+
+    python3 -m unittest discover -s IEIC-main/应急搜救 -p 'test_p4_gas_alarm.py' -v
+
+覆盖已观察协议包、日志增量读取/轮转、阈值、无效和过期读数、位置记录、
+重复告警、恢复后重新报警、播报失败重试及离线隔离。
+尚未进行本模块的真实 VOC 读取或整条实机告警联测。

@@ -1,0 +1,233 @@
+P2 疑似人员热源检测模块（全画面、相邻区域合并、重复观测匹配）
+
+核心交付：p2_rescue.py。只复制这个文件即可使用，无需依赖原测试脚本。
+环境：Python 3.8+、NumPy。实际下载需要 ssh，可见光取证需要 ffmpeg。
+播报建议在 .120 导航主机运行，复用已有 libespeak-ng 和 aplay/MCP01 声卡。
+不依赖 ROS，不读取 /current_pose、/odom，不控制机器人或云台。
+可见光只保存现场照片，不参与热源识别、合并、匹配，也不进行图像融合。
+
+一、给集成人员的调用方法
+
+将 p2_rescue.py 放入模块搜索路径，在机器人停稳后调用：
+
+    from p2_rescue import RescueDetector
+
+    detector = RescueDetector(
+        output_dir='/home/robot/p2_results',
+        threshold_c=32.0,
+        min_area_pixels=64,
+        merge_gap_pixels=20,
+        speak=True,
+    )
+
+    result = detector.detect(
+        task_id='search_01_capture_001',
+        checkpoint_id='search_point_A',
+        location_label='搜救点A',
+        robot_pose={'x': 5.0, 'y': 3.0, 'yaw': 0.8},
+        frame_id='map',
+    )
+
+后续检测继续使用同一个 detector 对象。
+同一检查点使用相同 checkpoint_id，task_id 可以每次不同。
+不传 checkpoint_id 时沿用 task_id；若每次都更换这个标识，将不能沿用同点记录。
+x、y 为地图平面坐标，单位米；yaw 为弧度，地图 +X 为 0，逆时针为正。
+传入机器人停稳时的位姿，并在本次采集期间保持停稳。
+相机固定朝向机器人前方；机器人位姿由调用方提供，本模块不验证定位质量。
+
+初始化一次；一次 detect 完成拍照、检测、取证、逐目标可选播报。
+这是同步调用，不应放入必须持续响应的控制循环。
+同一实例并发调用返回 busy。同一设备应由一个实例顺序调用。
+
+二、当前具体做什么
+
+1. 全画面检测
+   默认 roi=(0, 0, 1, 1)，覆盖完整 640×512 温度矩阵。
+   温度超过阈值的像素组成热区域，保留至少 min_fragment_pixels 像素的小区域。
+   再将边界框间距不超过 merge_gap_pixels 的区域合并。
+   最后按合并后的实际高温像素面积筛选候选目标。
+   面积不包含区域之间温度较低的空隙。
+
+2. 同帧合并
+   例如脸和手形成两个相邻热区域，可以合并成一个候选。
+   通过相邻关系可以形成多个区域组成的组；保留 component_boxes 供检查。
+   距离很近的两个人也可能被合并；阈值过小则可能仍把同一人分成多个候选。
+   这是简单几何启发式，不是人体识别，也不能严格给出人数。
+   超过 512 个有效小区域时返回 error，提示检查阈值/场景，避免大量噪声导致合并处理过慢。
+
+3. 同点、同视角匹配
+   checkpoint_id、frame_id 及处理配置相同，并且相对该视角最初的机器人位置：
+     平移不超过 0.25 米，朝向差不超过 10 度，记录未超过 120 秒，
+   才使用旧目标进行匹配。
+   比较热区域框重叠或像素中心距离，匹配明确时沿用目标编号。
+   首次编号从画面左到右；后续编号稳定，不因左右排序变化重新编号。
+   目标暂时消失后在有效期内回到相近位置，仍可沿用编号。
+   匹配记录默认仅保留在对象内存中，不跨进程重启恢复。
+
+4. 保守处理分裂/合并
+   如果一个旧目标同时匹配两个新区域，或者一个新区域匹配多个旧目标：
+     association=ambiguous_local_match；
+     target_id=None；possible_target_ids 列出可能对应的旧编号；
+     needs_confirmation=True；不新增目标编号，不自动重复播报这些模糊对应。
+   这样不把“一人被分成两块”直接累计为两名新增人员。
+
+5. 跨视角不盲目累计
+   换检查点、明显移动/转向、坐标系变化或匹配记录过期后，建立新的视角记录。
+   若此前已有热源记录，新视角发现的候选标记为 unconfirmed_observation，
+   needs_confirmation=True，不能认为它是新增人员。
+   没有 robot_pose 时也可以检测，但不能可靠复用视角，观测将标记待确认。
+   返回此前有效视角且位姿仍接近其最初位置时，可以恢复该视角的目标编号。
+
+6. 位置与播报
+   每个候选分别返回机器人观测坐标和左前方/正前方/右前方。
+   方向由目标中心落在热图的左、中、右三分区决定；三个区域都参与检测。
+   这描述的是相机视野方向，不是经过标定的精确方位角。
+   开启 speak=True 时逐个播报，例如：
+     “搜救点A，观测位置横坐标5.0米，纵坐标3.0米，目标1，左前方发现疑似人员热源。”
+   跨视角待确认候选追加：“是否与此前目标重复待确认。”
+   目标编号仅在该视角内有效；不同视角的“目标1”不是同一已确认身份。
+   已成功播报且再次匹配的目标自动抑制重复播报。
+   播报失败不标记已播报，下次匹配到同一目标会重试。
+   默认每次最多尝试播报 5 个目标；其余标记 deferred，下次调用继续。
+   关闭播报后检测仍可用；阴性结果不自动播放。
+
+三、如何解读返回结果
+
+result['status']：
+  ok：本次采集、检测和基本证据保存成功，不代表完整 P2 通过。
+  error：采集、输入或必要证据保存失败，target_found=None。
+  busy：同一实例已有调用在运行，target_found=None，稍后重试。
+
+result['target_found']：本次是否存在筛选后的候选热源。
+result['candidate_count']：本次合并后的候选数量，不是人数。
+result['region_count'] 和 regions：保留兼容字段，与合并后候选对应。
+result['targets']：按当前图像从左到右排列的候选列表，每项包含：
+  observation_index：本次热图中的数字标注，1、2、3……，仅在本帧有效。
+  target_id：如 V001-T001，当前会话、当前数据源内的视角局部编号。
+  target_number：语音使用的视角内数字编号。
+  view_id：视角编号；完整记录应结合 session_id 和 source 判断。
+  bbox_xywh / centroid_xy：温度矩阵中的像素框和中心。
+  component_count / component_boxes：合并前热区域数及框。
+  direction / direction_text：left_front/左前方、front/正前方、right_front/右前方。
+  observation_pose / frame_id：机器人观测位置及坐标系。
+  estimated_target_position：默认 None；可选固定距离假设估计，见下一节。
+  association：
+    new_candidate_in_view：当前视角中新出现的候选，不等于新增人员。
+    matched_in_view：与该视角既有候选匹配。
+    unconfirmed_observation：新观测，跨视角重复、过期或缺少位姿的问题尚未确认。
+    ambiguous_local_match：同视角分裂/合并等多义对应。
+  needs_confirmation / confirmation_reason：是否需要确认及原因。
+  speech_text / speech_status：本目标的播报文本和状态。
+  speech_wav：本次成功播报时保存的 WAV 路径。
+
+unique_person_count、new_person_count 和各目标 is_new_person 始终为 None。
+本方法没有可靠的全局人员身份关联，不应累加每次 candidate_count 当作搜救人数。
+new_candidate_count_in_view 仅统计本次明确建立的视角内候选；
+unconfirmed_observation_count 统计本次新建立的待确认观测；
+matched_candidate_count 统计本次沿用编号的候选。
+这些都是本次调用的记录数量，不是全局人员计数。
+
+speech_status 总体状态包括：
+  success：本次候选均已播报或此前已成功播报。
+  suppressed_repeated：本次全是已经成功播报的匹配目标，没有再次播放。
+  partial：部分完成；检查每个目标的 failed/deferred/needs_confirmation 等状态。
+  failed：播报失败。
+  needs_confirmation：有模糊对应，没有自动确认并播报。
+  not_requested：未开启播报。
+  not_needed：本次没有候选。
+  disabled_for_replay：离线回放不会播放声音。
+announcement_complete 仅表示本次候选播报是否完成，不表示 P2 或人员确认完成。
+
+evidence 返回 result.json、原始 FIR、温度 CSV、标注热图，以及可用的厂家 JPG 和可见光照片。
+厂家 JPG、可见光或播报失败会记录 warnings；不能只检查 status 就认定播报/附属取证完成。
+location_valid=True 只表示传入了数值有限的机器人位置，不是定位精度验收。
+
+四、可选粗略坐标（第一版可不启用）
+
+默认只返回“观测位置＋方向”，不需要相机标定或视场角。
+若必须生成每个目标的地图估计坐标，同时设置：
+    assumed_distance_m=2.0, horizontal_fov_deg=60.0
+上面数值仅示例；60 度不是已经验证的设备视场角。
+模块用配置的水平视场角和热图横坐标估计各目标方位，再向该方向投影假设距离。
+相机偏向机体左侧时，camera_yaw_offset_rad 填正偏角。
+距离没有实测，结果 method=assumed_range_configured_fov、distance_measured=False。
+这些估计坐标不用于目标去重；播报仍使用观测位置与粗略方向。
+与旧版不同：只设置 assumed_distance_m 而不设置 horizontal_fov_deg 会报参数错误，
+避免全画面多个目标被错误放在同一个中心点。
+顶层 estimated_target_position 仅在恰有一个候选时提供，多个候选请读取 targets。
+
+五、现场需要调哪些参数
+
+threshold_c=32.0：高温像素阈值，开发初值，不是人体温度标准。
+min_fragment_pixels=8：合并前的小区域过滤，抑制散点。
+min_area_pixels=64：合并后候选需要的高温像素面积。
+merge_gap_pixels=20：相邻区域框之间可合并的最大距离；太大可能合并两个人。
+match_distance_pixels=35 / match_iou_threshold=0.2：中心接近或框重叠即可形成候选匹配。
+same_view_distance_m=0.25 / same_view_yaw_deg=10：是否仍视为相同观测视角。
+match_max_age_s=120：匹配有效期，单位秒，使用单调时钟。
+flip_horizontal=False：若现场验证 FIR 左右与实物相反，可开启水平翻转。
+
+先用一名人员/模拟热源验证分离与方向，再用两名分开的目标验证不误合并。
+把热源分别放在实际左侧和右侧，核对方向；不需要双相机融合。
+温度相近的背景、很近的多人、目标明显移动、前后遮挡替换等情况仍可能误匹配。
+换视角时不保证跨视角身份一致，也不把记录数量当作人数。
+
+六、历史重置及生命周期
+
+    detector.reset(checkpoint_id='search_point_A')  # 忘记这个检查点，再次发现可以重播
+    detector.reset()                              # 新搜救会话，清空全部历史
+
+不会删除既有证据文件。reset 在检测进行时返回 busy。
+一次搜救期间保持同一个 detector 实例。新建对象或重启进程会失去匹配与播报历史。
+同一对象内，offline_replay 与 live_capture 的历史隔离，离线样例不会抑制现场播报。
+不同会话、视角和数据源的 target_id 不构成全局唯一人员身份。
+
+七、实机准备与独立命令
+
+推荐在 192.168.1.120 部署，连接 192.168.1.214:10086。
+TCP 触发一次红外拍照，再用 SSH 读取相机导出的 FIR/JPG；会产生 SD 卡文件。
+运行模块的用户需要预先配置相机主机 SSH 密钥登录，核对主机身份并录入 known_hosts。
+模块使用 BatchMode，不等待输入密码，不自动接受未知主机密钥。
+ssh_key 参数可指定私钥。用以下只读命令检查无人值守连接：
+
+    ssh -o BatchMode=yes -o StrictHostKeyChecking=yes root@192.168.1.214 true
+
+可见光默认地址 rtsp://192.168.1.214:8554/visible；不需要时 capture_visible=False。
+TCP 响应限时默认 30 秒，每个文件下载/可见光抓图各 20 秒，每个目标播报各 30 秒。
+这些是失败等待上限，不是测得耗时；完整调用最坏可能约 240 秒加本地处理，
+需实机测量正常耗时并按任务需要缩短构造参数中的超时，不适合视频帧率调用。
+本地和相机文件不自动清理，需要管理存储空间。
+
+实机单次调试（会拍照，发现目标且加 --speak 时会发声）：
+
+    python3 p2_rescue.py --task-id capture_001 --checkpoint-id A --location-label 搜救点A --pose 5 3 0.8 --speak
+
+独立命令每次都是新进程，不能靠多次命令测试跨调用抑制；应在同一 Python 对象内连续调用。
+
+八、离线回放与验证
+
+在本文件所在目录执行，不访问设备、不播放声音：
+
+    python3 p2_rescue.py --fir ../测试结果/2026-10-12_云台测温接口/红外矩阵/20230619033310_ir.fir --task-id replay_01 --checkpoint-id A --pose 5 3 0.8
+
+真实样例最高温约 28.2℃，默认 32℃阈值返回未发现；这不是带人员样例。
+离线也可在同一对象上反复 detect(..., fir_path='...') 验证编号匹配。
+离线传入的位置只是回放元数据，不代表历史曝光位置；结果标记 source=offline_replay。
+
+从 IEIC_2026 工作区运行离线测试：
+
+    python3 -m unittest discover -s IEIC-main/应急搜救 -p 'test_p2_rescue.py' -v
+
+测试包含真实 FIR、合成多热源、片段合并、帧间抖动、重复播报抑制、播报失败重试、
+跨视角标记、分裂/合并歧义、重置、协议错误与超时，不访问机器人或声卡。
+实现尚未进行新版本实机联测；现场识别率、漏检、误合并和匹配阈值仍需验证。
+
+九、证据和时间
+
+每次调用保存独立目录，文件名使用本机时间和随机编号。
+thermal_detection.png：灰度温度图、蓝色检测范围、红色候选框、黄色数字。
+数字对应 targets[].observation_index，不是跨帧稳定 ID；稳定局部 ID 见 JSON。
+CSV 和标注图使用同一矩阵方向；flip_horizontal=True 时两者一起翻转，原 FIR 不改动。
+灰度是每张图单独缩放，不是固定温标；实际温度看 CSV/JSON。
+厂家 JPG 和可见光原样保存，不叠加热图框，也不视为同步成像。
+接收/处理时间来自运行机器时钟，不是相机曝光时间；设备时间同步仍需部署联测。

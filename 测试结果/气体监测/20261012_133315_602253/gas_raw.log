@@ -1,0 +1,2 @@
+2026-10-12 13:34:34 758310 [001360][TimerMgr] [I]: [PtlGasSensor_RK_GAS01.cpp:514:Send_log_print] Times[20] 发送[FFEE0A0160C40111005B5B06010A322F41] 命令[3] 气体[查询一氧化碳]
+2026-10-12 13:34:34 969867 [001351][PowerHdl] [I]: [PtlGasSensor_RK_GAS01.cpp:586:Recv_log_print] Times[20] RECV[5B5B0C010A00000000000019] [查询一氧化碳]值[0]

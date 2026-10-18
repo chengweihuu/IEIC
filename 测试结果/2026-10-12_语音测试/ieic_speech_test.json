@@ -1,0 +1,10 @@
+{
+  "text": "这是机器人语音测试。自动对焦已保留。",
+  "wav": "/tmp/ieic_speech_test.wav",
+  "voice": "cmn",
+  "sample_rate": 22050,
+  "duration_seconds": 4.81968253968254,
+  "synthesis": "success",
+  "playback": "success",
+  "playback_returncode": 0
+}

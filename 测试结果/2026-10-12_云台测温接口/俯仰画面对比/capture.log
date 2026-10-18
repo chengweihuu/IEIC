@@ -1,0 +1,23 @@
+[h264 @ 0x55bea6436080] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x55bea6436080] decode_slice_header error
+[h264 @ 0x55bea6436080] no frame!
+[h264 @ 0x55bea6436080] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x55bea6436080] decode_slice_header error
+[h264 @ 0x55bea6436080] no frame!
+[h264 @ 0x55bea6436080] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x55bea6436080] decode_slice_header error
+[h264 @ 0x55bea6436080] no frame!
+[h264 @ 0x55bea6436080] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x55bea6436080] decode_slice_header error
+[h264 @ 0x55bea6436080] no frame!
+[h264 @ 0x55bea6436080] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x55bea6436080] decode_slice_header error
+[h264 @ 0x55bea6436080] no frame!
+[swscaler @ 0x55bea6595840] deprecated pixel format used, make sure you did set range correctly
+[h264 @ 0x55bea6cf6400] error while decoding MB 65 63, bytestream -13
+[vist#0:0/h264 @ 0x55bea643a180] corrupt decoded frame

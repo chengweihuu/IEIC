@@ -1,0 +1,17 @@
+{
+  "source": "测试结果/2026-10-12_云台测温接口/红外矩阵/20230619033310_ir.fir",
+  "csv": "测试结果/2026-10-12_云台测温接口/红外矩阵/20230619033310_ir.csv",
+  "width": 640,
+  "height": 512,
+  "pixels": 327680,
+  "unit": "degC",
+  "storage_step_degC": 0.1,
+  "min_degC": 25.6,
+  "max_degC": 28.2,
+  "mean_degC": 26.917521667480468,
+  "header_min_degC": 25.649999618530273,
+  "header_max_degC": 28.256999969482422,
+  "row_order": "FIR file order; SDK rows reversed by vendor exporter",
+  "image_alignment_verified": false,
+  "measurement_accuracy_verified": false
+}

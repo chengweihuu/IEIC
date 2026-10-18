@@ -1,0 +1,38 @@
+[
+  {
+    "capture_time": "14:01:49.185168",
+    "response_status": 0,
+    "connect_status": 1,
+    "pitch": 571,
+    "total_status": 0,
+    "yaw": -6,
+    "pitch_deg": 5.71,
+    "yaw_deg": -0.06,
+    "frame_hex": "f0e0fd843f0011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537312c22746f74616c5f737461747573223a302c22796177223a2d367d07f1e1",
+    "xor_ok": true
+  },
+  {
+    "capture_time": "14:01:49.575239",
+    "response_status": 0,
+    "connect_status": 1,
+    "pitch": 571,
+    "total_status": 0,
+    "yaw": -13,
+    "pitch_deg": 5.71,
+    "yaw_deg": -0.13,
+    "frame_hex": "f0e0fe84400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537312c22746f74616c5f737461747573223a302c22796177223a2d31337d33f1e1",
+    "xor_ok": true
+  },
+  {
+    "capture_time": "14:01:49.965932",
+    "response_status": 0,
+    "connect_status": 1,
+    "pitch": 571,
+    "total_status": 0,
+    "yaw": -17,
+    "pitch_deg": 5.71,
+    "yaw_deg": -0.17,
+    "frame_hex": "f0e0ff84400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537312c22746f74616c5f737461747573223a302c22796177223a2d31377d37f1e1",
+    "xor_ok": true
+  }
+]

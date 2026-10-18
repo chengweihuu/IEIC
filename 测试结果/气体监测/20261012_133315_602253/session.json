@@ -1,0 +1,10 @@
+{
+  "ended_at": "2026-10-12T13:34:33.682+08:00",
+  "mode": "ssh_log_follow",
+  "rows": 1,
+  "ssh_host": "192.168.1.120",
+  "remote_log": "/home/root/log/other.log",
+  "units": "unverified",
+  "timestamps": "Local receive time and remote log time are NOT synchronized",
+  "exit_code": 0
+}

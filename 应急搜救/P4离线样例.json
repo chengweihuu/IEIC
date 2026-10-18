@@ -1,0 +1,11 @@
+{
+  "channel": "CO",
+  "value": 2.0,
+  "unit": "software_value",
+  "valid": true,
+  "sample_id": "synthetic_co_demo_001",
+  "observed_at": "2026-10-12T13:00:00+08:00",
+  "source": "synthetic_fixture_not_sensor_data",
+  "timestamp_basis": "synthetic_demo_time",
+  "measurement_verified": false
+}

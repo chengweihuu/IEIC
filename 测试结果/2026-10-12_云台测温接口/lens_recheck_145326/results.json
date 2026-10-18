@@ -1,0 +1,58 @@
+[
+  {
+    "phase": "before",
+    "time": 1791788006.5110943,
+    "focus_mode": 0,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 26624
+  },
+  {
+    "phase": "zoom_2x_wait15",
+    "time": 1791788024.2406757,
+    "focus_mode": 0,
+    "zoom_position": 3520,
+    "magnification": 20,
+    "focus_position": 0
+  },
+  {
+    "phase": "focus_24576",
+    "time": 1791788033.960533,
+    "focus_mode": 1,
+    "zoom_position": 3520,
+    "magnification": 20,
+    "focus_position": 24576
+  },
+  {
+    "phase": "wide_auto",
+    "time": 1791788044.007435,
+    "focus_mode": 0,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 28672
+  },
+  {
+    "phase": "wide_manual_4096",
+    "time": 1791788051.0207624,
+    "focus_mode": 1,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 4096
+  },
+  {
+    "phase": "wide_oneshot",
+    "time": 1791788062.9612916,
+    "focus_mode": 1,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 19114
+  },
+  {
+    "phase": "restored",
+    "time": 1791788070.203839,
+    "focus_mode": 1,
+    "zoom_position": 0,
+    "magnification": 10,
+    "focus_position": 26624
+  }
+]

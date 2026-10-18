@@ -1,0 +1,310 @@
+[
+  {
+    "t": 0.068,
+    "kind": "release",
+    "response": "f0e0307505000f000000000ff1e1"
+  },
+  {
+    "t": 0.085,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.71,
+    "yaw": -0.08
+  },
+  {
+    "t": 0.221,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.71,
+    "yaw": -0.15
+  },
+  {
+    "t": 0.354,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.75,
+    "yaw": -0.13
+  },
+  {
+    "t": 0.469,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.66,
+    "yaw": -0.08
+  },
+  {
+    "t": 0.632,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.08
+  },
+  {
+    "t": 0.744,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.82,
+    "yaw": -0.02
+  },
+  {
+    "t": 0.855,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.71,
+    "yaw": -0.13
+  },
+  {
+    "t": 1.002,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.71,
+    "yaw": -0.15
+  },
+  {
+    "t": 1.133,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.77,
+    "yaw": -0.08
+  },
+  {
+    "t": 1.245,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.69,
+    "yaw": -0.13
+  },
+  {
+    "t": 1.356,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.66,
+    "yaw": -0.13
+  },
+  {
+    "t": 1.533,
+    "kind": "angle",
+    "phase": "baseline",
+    "pitch": 5.73,
+    "yaw": -0.06
+  },
+  {
+    "t": 1.645,
+    "kind": "angle",
+    "phase": "before_pulse",
+    "pitch": 5.75,
+    "yaw": -0.08
+  },
+  {
+    "t": 1.747,
+    "kind": "motion",
+    "yaw_speed": 1,
+    "pitch_speed": 0,
+    "response": "f0e0f87505000f000000000ff1e1"
+  },
+  {
+    "t": 1.752,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.71,
+    "yaw": -0.08
+  },
+  {
+    "t": 1.847,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.75,
+    "yaw": -0.13
+  },
+  {
+    "t": 1.948,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.77,
+    "yaw": -0.13
+  },
+  {
+    "t": 2.048,
+    "kind": "angle",
+    "phase": "pulse_0",
+    "pitch": 5.69,
+    "yaw": -0.15
+  },
+  {
+    "t": 2.164,
+    "kind": "release",
+    "response": "f0e05c7605000f000000000ff1e1"
+  },
+  {
+    "t": 2.476,
+    "kind": "guard_release",
+    "response": "f0e0947505000f000000000ff1e1"
+  },
+  {
+    "t": 2.482,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.73,
+    "yaw": 0.26
+  },
+  {
+    "t": 2.587,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.69,
+    "yaw": 0.26
+  },
+  {
+    "t": 2.699,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.73,
+    "yaw": 0.28
+  },
+  {
+    "t": 2.854,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.24
+  },
+  {
+    "t": 2.971,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.24
+  },
+  {
+    "t": 3.093,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.28
+  },
+  {
+    "t": 3.2,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.28
+  },
+  {
+    "t": 3.303,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.71,
+    "yaw": 0.24
+  },
+  {
+    "t": 3.406,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.75,
+    "yaw": 0.26
+  },
+  {
+    "t": 3.521,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.77,
+    "yaw": 0.24
+  },
+  {
+    "t": 3.654,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.73,
+    "yaw": 0.21
+  },
+  {
+    "t": 3.772,
+    "kind": "angle",
+    "phase": "after_pulse_0",
+    "pitch": 5.77,
+    "yaw": 0.21
+  },
+  {
+    "t": 3.872,
+    "kind": "pulse_result",
+    "index": 0,
+    "pitch_change": 0.02,
+    "yaw_change": 0.29
+  },
+  {
+    "t": 3.914,
+    "kind": "angle",
+    "phase": "before_pulse",
+    "pitch": 5.66,
+    "yaw": 0.24
+  },
+  {
+    "t": 3.941,
+    "kind": "motion",
+    "yaw_speed": -1,
+    "pitch_speed": 0,
+    "response": "f0e0f97505000f000000000ff1e1"
+  },
+  {
+    "t": 3.955,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.71,
+    "yaw": 0.15
+  },
+  {
+    "t": 4.015,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.69,
+    "yaw": 0.28
+  },
+  {
+    "t": 4.102,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.75,
+    "yaw": 0.21
+  },
+  {
+    "t": 4.155,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.75,
+    "yaw": 0.21
+  },
+  {
+    "t": 4.215,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.77,
+    "yaw": 0.24
+  },
+  {
+    "t": 4.303,
+    "kind": "angle",
+    "phase": "pulse_1",
+    "pitch": 5.73,
+    "yaw": 0.24
+  },
+  {
+    "t": 4.328,
+    "kind": "release",
+    "response": "f0e05d7605000f000000000ff1e1"
+  },
+  {
+    "t": 4.737,
+    "kind": "guard_release",
+    "response": "f0e0957505000f000000000ff1e1"
+  },
+  {
+    "t": 4.771,
+    "kind": "final_release",
+    "response": "f0e0177905000f000000000ff1e1"
+  },
+  {
+    "t": 4.771,
+    "kind": "aborted",
+    "error": "Unhealthy device status"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:39.113745+08:00",
+    "status": 0,
+    "frame_hex": "f0e0e880400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537352c22746f74616c5f737461747573223a302c22796177223a2d32317d36f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -21
+    },
+    "pitch_deg": 5.75,
+    "yaw_deg": -0.21
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:39.376190+08:00",
+    "status": 0,
+    "frame_hex": "f0e0e980400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537332c22746f74616c5f737461747573223a302c22796177223a2d32367d37f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -26
+    },
+    "pitch_deg": 5.73,
+    "yaw_deg": -0.26
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:39.660097+08:00",
+    "status": 0,
+    "frame_hex": "f0e0ea80400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537352c22746f74616c5f737461747573223a302c22796177223a2d32367d31f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -26
+    },
+    "pitch_deg": 5.75,
+    "yaw_deg": -0.26
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:39.915028+08:00",
+    "status": 0,
+    "frame_hex": "f0e0eb80400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537372c22746f74616c5f737461747573223a302c22796177223a2d32367d33f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 577,
+      "total_status": 0,
+      "yaw": -26
+    },
+    "pitch_deg": 5.77,
+    "yaw_deg": -0.26
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:40.177080+08:00",
+    "status": 0,
+    "frame_hex": "f0e0ec80400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537332c22746f74616c5f737461747573223a302c22796177223a2d32347d35f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -24
+    },
+    "pitch_deg": 5.73,
+    "yaw_deg": -0.24
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:40.445389+08:00",
+    "status": 0,
+    "frame_hex": "f0e0ed80400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537352c22746f74616c5f737461747573223a302c22796177223a2d32387d3ff1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -28
+    },
+    "pitch_deg": 5.75,
+    "yaw_deg": -0.28
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:40.761277+08:00",
+    "status": 0,
+    "frame_hex": "f0e0ee80400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537312c22746f74616c5f737461747573223a302c22796177223a2d32367d35f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 571,
+      "total_status": 0,
+      "yaw": -26
+    },
+    "pitch_deg": 5.71,
+    "yaw_deg": -0.26
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:41.072065+08:00",
+    "status": 0,
+    "frame_hex": "f0e0ef80400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537352c22746f74616c5f737461747573223a302c22796177223a2d32347d33f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 575,
+      "total_status": 0,
+      "yaw": -24
+    },
+    "pitch_deg": 5.75,
+    "yaw_deg": -0.24
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:41.378432+08:00",
+    "status": 0,
+    "frame_hex": "f0e0f080400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537332c22746f74616c5f737461747573223a302c22796177223a2d32367d37f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -26
+    },
+    "pitch_deg": 5.73,
+    "yaw_deg": -0.26
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:41.683216+08:00",
+    "status": 0,
+    "frame_hex": "f0e0f180400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537332c22746f74616c5f737461747573223a302c22796177223a2d31397d3bf1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -19
+    },
+    "pitch_deg": 5.73,
+    "yaw_deg": -0.19
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:41.983495+08:00",
+    "status": 0,
+    "frame_hex": "f0e0f280400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537332c22746f74616c5f737461747573223a302c22796177223a2d32317d30f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 573,
+      "total_status": 0,
+      "yaw": -21
+    },
+    "pitch_deg": 5.73,
+    "yaw_deg": -0.21
+  },
+  {
+    "query": "ptz_status",
+    "received_at": "2026-10-12T14:10:42.284041+08:00",
+    "status": 0,
+    "frame_hex": "f0e0f380400011000000007b22636f6e6e6563745f737461747573223a312c227069746368223a3537372c22746f74616c5f737461747573223a342c22796177223a2d32347d35f1e1",
+    "data": {
+      "connect_status": 1,
+      "pitch": 577,
+      "total_status": 4,
+      "yaw": -24
+    },
+    "pitch_deg": 5.77,
+    "yaw_deg": -0.24
+  }
+]

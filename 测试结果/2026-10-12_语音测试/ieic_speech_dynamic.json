@@ -1,0 +1,10 @@
+{
+  "text": "动态播报测试，现在是15点0分。测试结束。",
+  "wav": "/tmp/ieic_speech_dynamic.wav",
+  "voice": "cmn",
+  "sample_rate": 22050,
+  "duration_seconds": 5.474557823129252,
+  "synthesis": "success",
+  "playback": "success",
+  "playback_returncode": 0
+}

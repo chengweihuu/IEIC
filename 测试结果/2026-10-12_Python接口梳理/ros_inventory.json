@@ -1,0 +1,1426 @@
+{
+  "host": "192.168.1.120",
+  "checked_at": 1791789321.2939389,
+  "ros_master_uri": "http://localhost:11311",
+  "topics": {
+    "/rosout_agg": {
+      "type": "rosgraph_msgs/Log",
+      "publishers": [
+        "/rosout"
+      ],
+      "subscribers": []
+    },
+    "/rosout": {
+      "type": "rosgraph_msgs/Log",
+      "publishers": [
+        "/omni_interface_node",
+        "/odom_interface_node",
+        "/lpms_ig1",
+        "/imudata_deg",
+        "/pointcloud_to_laserscan_for_bypass",
+        "/M1_rslidar_state_publisher",
+        "/rslidar_sdk_node",
+        "/pointcloud_to_laserscan_for_obstacle",
+        "/rockbot_nodelet_manager",
+        "/pointcloud_to_laserscan_for_landmark",
+        "/parking_controller_node",
+        "/map_server",
+        "/move_base",
+        "/pathFollower",
+        "/rockbot_navigation_node",
+        "/localPlanner",
+        "/laser_landmark_detector_node",
+        "/rk_visualizer",
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/rosout"
+      ]
+    },
+    "/command": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/omni_interface_node"
+      ],
+      "subscribers": [
+        "/odom_interface_node",
+        "/rockbot_navigation_node",
+        "/rockbot_lio_localization_node"
+      ]
+    },
+    "/proxy_cmd_vel": {
+      "type": "geometry_msgs/Twist",
+      "publishers": [
+        "/omni_interface_node"
+      ],
+      "subscribers": [
+        "/rockbot_navigation_node"
+      ]
+    },
+    "/initialpose": {
+      "type": "geometry_msgs/PoseWithCovarianceStamped",
+      "publishers": [
+        "/omni_interface_node",
+        "/rk_visualizer"
+      ],
+      "subscribers": [
+        "/rockbot_lio_localization_node"
+      ]
+    },
+    "/move_base_simple/goal": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [
+        "/omni_interface_node",
+        "/rk_visualizer"
+      ],
+      "subscribers": [
+        "/rockbot_navigation_node",
+        "/rk_visualizer"
+      ]
+    },
+    "/clicked_point": {
+      "type": "geometry_msgs/PointStamped",
+      "publishers": [
+        "/omni_interface_node",
+        "/rk_visualizer"
+      ],
+      "subscribers": [
+        "/localPlanner",
+        "/move_base",
+        "/rk_visualizer"
+      ]
+    },
+    "/switch_map": {
+      "type": "std_msgs/Int8",
+      "publishers": [
+        "/omni_interface_node"
+      ],
+      "subscribers": []
+    },
+    "/cmd_vel": {
+      "type": "geometry_msgs/Twist",
+      "publishers": [
+        "/pathFollower",
+        "/move_base"
+      ],
+      "subscribers": [
+        "/omni_interface_node",
+        "/odom_interface_node"
+      ]
+    },
+    "/cmdack_type": {
+      "type": "std_msgs/UInt8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/current_pose": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/omni_interface_node",
+        "/move_base"
+      ]
+    },
+    "/tf": {
+      "type": "tf2_msgs/TFMessage",
+      "publishers": [
+        "/odom_interface_node",
+        "/M1_rslidar_state_publisher",
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/move_base",
+        "/localPlanner",
+        "/rockbot_nodelet_manager",
+        "/rockbot_lio_localization_node",
+        "/rk_visualizer"
+      ]
+    },
+    "/imu/data": {
+      "type": "sensor_msgs/Imu",
+      "publishers": [
+        "/lpms_ig1"
+      ],
+      "subscribers": [
+        "/imudata_deg",
+        "/rockbot_lio_localization_node"
+      ]
+    },
+    "/imu/mag": {
+      "type": "sensor_msgs/MagneticField",
+      "publishers": [
+        "/lpms_ig1"
+      ],
+      "subscribers": []
+    },
+    "/wheel_odom": {
+      "type": "nav_msgs/Odometry",
+      "publishers": [
+        "/odom_interface_node"
+      ],
+      "subscribers": []
+    },
+    "/charge_state": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/odom_interface_node"
+      ],
+      "subscribers": []
+    },
+    "/location_state": {
+      "type": "std_msgs/Int8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/navigation_state": {
+      "type": "std_msgs/Int8",
+      "publishers": [
+        "/pathFollower",
+        "/localPlanner"
+      ],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/angular_vel_deg": {
+      "type": "geometry_msgs/Vector3",
+      "publishers": [
+        "/imudata_deg"
+      ],
+      "subscribers": []
+    },
+    "/bypass_state": {
+      "type": "std_msgs/Int8",
+      "publishers": [
+        "/rockbot_navigation_node"
+      ],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/rpy_deg": {
+      "type": "geometry_msgs/Vector3",
+      "publishers": [
+        "/imudata_deg"
+      ],
+      "subscribers": [
+        "/odom_interface_node"
+      ]
+    },
+    "/space_state": {
+      "type": "std_msgs/Int8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/imu/is_autocalibration_active": {
+      "type": "std_msgs/Bool",
+      "publishers": [
+        "/lpms_ig1"
+      ],
+      "subscribers": []
+    },
+    "/status": {
+      "type": "std_msgs/UInt8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/goal_reach": {
+      "type": "std_msgs/Empty",
+      "publishers": [
+        "/rockbot_navigation_node",
+        "/localPlanner"
+      ],
+      "subscribers": [
+        "/omni_interface_node",
+        "/rockbot_navigation_node"
+      ]
+    },
+    "/waypoint_reached": {
+      "type": "std_msgs/UInt32",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/omni_interface_node",
+        "/rockbot_navigation_node"
+      ]
+    },
+    "/tf_static": {
+      "type": "tf2_msgs/TFMessage",
+      "publishers": [
+        "/M1_rslidar_state_publisher"
+      ],
+      "subscribers": [
+        "/move_base",
+        "/localPlanner",
+        "/rockbot_nodelet_manager",
+        "/rockbot_lio_localization_node",
+        "/rk_visualizer"
+      ]
+    },
+    "/waypoint_approach": {
+      "type": "std_msgs/UInt32",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/omni_interface_node",
+        "/rockbot_navigation_node"
+      ]
+    },
+    "/probability": {
+      "type": "std_msgs/UInt8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/fitness_score": {
+      "type": "std_msgs/Float32",
+      "publishers": [
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/omni_interface_node",
+        "/move_base"
+      ]
+    },
+    "/map_id": {
+      "type": "std_msgs/Int8",
+      "publishers": [
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/landmark_state": {
+      "type": "std_msgs/Int8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/joint_states": {
+      "type": "sensor_msgs/JointState",
+      "publishers": [],
+      "subscribers": [
+        "/M1_rslidar_state_publisher"
+      ]
+    },
+    "/legal_path": {
+      "type": "std_msgs/Bool",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/location_legalpath_state": {
+      "type": "std_msgs/Int8",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/lidar_points": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [
+        "/rslidar_sdk_node"
+      ],
+      "subscribers": [
+        "/laser_landmark_detector_node",
+        "/rockbot_nodelet_manager",
+        "/rockbot_lio_localization_node"
+      ]
+    },
+    "/fix": {
+      "type": "sensor_msgs/NavSatFix",
+      "publishers": [],
+      "subscribers": [
+        "/omni_interface_node"
+      ]
+    },
+    "/front_scan": {
+      "type": "sensor_msgs/LaserScan",
+      "publishers": [
+        "/rockbot_nodelet_manager"
+      ],
+      "subscribers": [
+        "/obstacle_detector",
+        "/rk_visualizer"
+      ]
+    },
+    "/obstacle_distance": {
+      "type": "std_msgs/Float32",
+      "publishers": [
+        "/obstacle_detector"
+      ],
+      "subscribers": []
+    },
+    "/map_metadata": {
+      "type": "nav_msgs/MapMetaData",
+      "publishers": [
+        "/map_server"
+      ],
+      "subscribers": []
+    },
+    "/map": {
+      "type": "nav_msgs/OccupancyGrid",
+      "publishers": [
+        "/map_server"
+      ],
+      "subscribers": [
+        "/move_base",
+        "/rk_visualizer"
+      ]
+    },
+    "/pose_estimate_W_R": {
+      "type": "geometry_msgs/Pose2D",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": [
+        "/parking_controller_node"
+      ]
+    },
+    "/parking_control_cmd": {
+      "type": "std_msgs/Int8",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/parking_controller_node"
+      ]
+    },
+    "/landmark_detector_enable": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/parking_controller_node"
+      ],
+      "subscribers": [
+        "/laser_landmark_detector_node"
+      ]
+    },
+    "/cmd_vel_landmark": {
+      "type": "geometry_msgs/Twist",
+      "publishers": [
+        "/parking_controller_node"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/lm_goal_reach": {
+      "type": "std_msgs/Empty",
+      "publishers": [
+        "/parking_controller_node"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/delta_pose": {
+      "type": "geometry_msgs/Pose2D",
+      "publishers": [
+        "/parking_controller_node"
+      ],
+      "subscribers": []
+    },
+    "/odom": {
+      "type": "nav_msgs/Odometry",
+      "publishers": [
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/pathFollower",
+        "/localPlanner",
+        "/rk_visualizer",
+        "/move_base"
+      ]
+    },
+    "/path": {
+      "type": "nav_msgs/Path",
+      "publishers": [
+        "/localPlanner"
+      ],
+      "subscribers": [
+        "/pathFollower",
+        "/rk_visualizer"
+      ]
+    },
+    "/joy": {
+      "type": "sensor_msgs/Joy",
+      "publishers": [],
+      "subscribers": [
+        "/pathFollower",
+        "/localPlanner"
+      ]
+    },
+    "/speed": {
+      "type": "std_msgs/Float32",
+      "publishers": [],
+      "subscribers": [
+        "/pathFollower",
+        "/localPlanner"
+      ]
+    },
+    "/stop": {
+      "type": "std_msgs/Int8",
+      "publishers": [],
+      "subscribers": [
+        "/pathFollower"
+      ]
+    },
+    "/ros_navigation_goal": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [
+        "/rockbot_navigation_node"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/move_base/cancel": {
+      "type": "actionlib_msgs/GoalID",
+      "publishers": [
+        "/rockbot_navigation_node"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/path_cancel": {
+      "type": "std_msgs/Empty",
+      "publishers": [
+        "/rockbot_navigation_node"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/pathFollower/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/pathFollower"
+      ],
+      "subscribers": []
+    },
+    "/goal_pose": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [
+        "/rockbot_navigation_node"
+      ],
+      "subscribers": [
+        "/localPlanner"
+      ]
+    },
+    "/pathFollower/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/pathFollower"
+      ],
+      "subscribers": []
+    },
+    "/move_base/result": {
+      "type": "move_base_msgs/MoveBaseActionResult",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/rockbot_navigation_node"
+      ]
+    },
+    "/laser_scan": {
+      "type": "sensor_msgs/LaserScan",
+      "publishers": [
+        "/rockbot_nodelet_manager"
+      ],
+      "subscribers": [
+        "/rockbot_navigation_node",
+        "/move_base"
+      ]
+    },
+    "/move_base/current_goal": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/goal": {
+      "type": "move_base_msgs/MoveBaseActionGoal",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/move_base/recovery_status": {
+      "type": "move_base_msgs/RecoveryStatus",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/rockbot_nodelet_manager/bond": {
+      "type": "bond/Status",
+      "publishers": [
+        "/rockbot_nodelet_manager",
+        "/pointcloud_to_laserscan_for_obstacle",
+        "/pointcloud_to_laserscan_for_bypass",
+        "/pointcloud_to_laserscan_for_landmark"
+      ],
+      "subscribers": [
+        "/rockbot_nodelet_manager",
+        "/pointcloud_to_laserscan_for_obstacle",
+        "/pointcloud_to_laserscan_for_bypass",
+        "/pointcloud_to_laserscan_for_landmark"
+      ]
+    },
+    "/laser_landmark": {
+      "type": "sensor_msgs/LaserScan",
+      "publishers": [
+        "/rockbot_nodelet_manager"
+      ],
+      "subscribers": []
+    },
+    "/init_pose": {
+      "type": "geometry_msgs/Pose2D",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/init_pose_init": {
+      "type": "geometry_msgs/Pose2D",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/posestamper_for_rviz_": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/reset_kalman_init": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/landmark_detector_state": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/landmark_detector_init": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/scan_high_intensity": {
+      "type": "sensor_msgs/LaserScan",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/kf_pose_init": {
+      "type": "geometry_msgs/Pose2D",
+      "publishers": [],
+      "subscribers": [
+        "/laser_landmark_detector_node"
+      ]
+    },
+    "/odom2": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [],
+      "subscribers": [
+        "/laser_landmark_detector_node"
+      ]
+    },
+    "/reflector_centers": {
+      "type": "visualization_msgs/Marker",
+      "publishers": [
+        "/laser_landmark_detector_node"
+      ],
+      "subscribers": []
+    },
+    "/globalmap": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": []
+    },
+    "/aligned_points": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [
+        "/rockbot_lio_localization_node"
+      ],
+      "subscribers": [
+        "/localPlanner",
+        "/rk_visualizer"
+      ]
+    },
+    "/terrain_map": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [],
+      "subscribers": [
+        "/localPlanner"
+      ]
+    },
+    "/navigation_boundary": {
+      "type": "geometry_msgs/PolygonStamped",
+      "publishers": [],
+      "subscribers": [
+        "/localPlanner"
+      ]
+    },
+    "/added_obstacles": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [],
+      "subscribers": [
+        "/localPlanner"
+      ]
+    },
+    "/check_obstacle": {
+      "type": "std_msgs/Bool",
+      "publishers": [],
+      "subscribers": [
+        "/localPlanner"
+      ]
+    },
+    "/navigation_mode": {
+      "type": "std_msgs/Int8",
+      "publishers": [],
+      "subscribers": [
+        "/localPlanner"
+      ]
+    },
+    "/free_paths": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [
+        "/localPlanner"
+      ],
+      "subscribers": []
+    },
+    "/stacked_scans": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [
+        "/localPlanner"
+      ],
+      "subscribers": []
+    },
+    "/plan_cloud": {
+      "type": "sensor_msgs/PointCloud2",
+      "publishers": [
+        "/localPlanner"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/static_map/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/static_map/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/obstacle_layer/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/obstacle_layer/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/inflation_layer/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/inflation_layer/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/footprint": {
+      "type": "geometry_msgs/PolygonStamped",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/move_base/global_costmap/costmap": {
+      "type": "nav_msgs/OccupancyGrid",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/costmap_updates": {
+      "type": "map_msgs/OccupancyGridUpdate",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/global_costmap/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/global_plan": {
+      "type": "nav_msgs/Path",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/obstacle_layer/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/obstacle_layer/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/inflation_layer/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/inflation_layer/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/footprint": {
+      "type": "geometry_msgs/PolygonStamped",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/move_base",
+        "/rk_visualizer"
+      ]
+    },
+    "/move_base/local_costmap/costmap": {
+      "type": "nav_msgs/OccupancyGrid",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/costmap_updates": {
+      "type": "map_msgs/OccupancyGridUpdate",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/local_costmap/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/global_plan": {
+      "type": "nav_msgs/Path",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/rk_visualizer"
+      ]
+    },
+    "/move_base/RkLocalPlanner/local_plan": {
+      "type": "nav_msgs/Path",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": [
+        "/rk_visualizer"
+      ]
+    },
+    "/move_base/RkLocalPlanner/teb_poses": {
+      "type": "geometry_msgs/PoseArray",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/teb_markers": {
+      "type": "visualization_msgs/Marker",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/teb_feedback": {
+      "type": "teb_local_planner/FeedbackMsg",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/goal": {
+      "type": "geometry_msgs/PoseStamped",
+      "publishers": [],
+      "subscribers": []
+    },
+    "/map_updates": {
+      "type": "map_msgs/OccupancyGridUpdate",
+      "publishers": [],
+      "subscribers": [
+        "/rk_visualizer"
+      ]
+    },
+    "/move_base/NavfnROS/plan": {
+      "type": "nav_msgs/Path",
+      "publishers": [],
+      "subscribers": [
+        "/rk_visualizer"
+      ]
+    },
+    "/move_base/TebLocalPlannerROS/local_plan": {
+      "type": "nav_msgs/Path",
+      "publishers": [],
+      "subscribers": [
+        "/rk_visualizer"
+      ]
+    },
+    "/move_base/RkLocalPlanner/costmap_converter/CostmapToPolygonsDBSMCCH/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/costmap_converter/CostmapToPolygonsDBSMCCH/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/RkLocalPlanner/obstacles": {
+      "type": "costmap_converter/ObstacleArrayMsg",
+      "publishers": [],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/move_base/RkLocalPlanner/via_points": {
+      "type": "nav_msgs/Path",
+      "publishers": [],
+      "subscribers": [
+        "/move_base"
+      ]
+    },
+    "/reference_W_R": {
+      "type": "geometry_msgs/Pose2D",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/landmark_detector": {
+      "type": "std_msgs/UInt8",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/feedback": {
+      "type": "move_base_msgs/MoveBaseActionFeedback",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/status": {
+      "type": "actionlib_msgs/GoalStatusArray",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/parameter_descriptions": {
+      "type": "dynamic_reconfigure/ConfigDescription",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    },
+    "/move_base/parameter_updates": {
+      "type": "dynamic_reconfigure/Config",
+      "publishers": [
+        "/move_base"
+      ],
+      "subscribers": []
+    }
+  },
+  "services": {
+    "/rosout/get_loggers": [
+      "/rosout"
+    ],
+    "/rosout/set_logger_level": [
+      "/rosout"
+    ],
+    "/omni_interface_node/get_loggers": [
+      "/omni_interface_node"
+    ],
+    "/omni_interface_node/set_logger_level": [
+      "/omni_interface_node"
+    ],
+    "/odom_interface_node/get_loggers": [
+      "/odom_interface_node"
+    ],
+    "/lpms_ig1/get_loggers": [
+      "/lpms_ig1"
+    ],
+    "/odom_interface_node/set_logger_level": [
+      "/odom_interface_node"
+    ],
+    "/lpms_ig1/set_logger_level": [
+      "/lpms_ig1"
+    ],
+    "/imudata_deg/get_loggers": [
+      "/imudata_deg"
+    ],
+    "/imudata_deg/set_logger_level": [
+      "/imudata_deg"
+    ],
+    "/imu/enable_gyro_autocalibration": [
+      "/lpms_ig1"
+    ],
+    "/imu/enable_auto_reconnect": [
+      "/lpms_ig1"
+    ],
+    "/imu/calibrate_gyroscope": [
+      "/lpms_ig1"
+    ],
+    "/imu/reset_heading": [
+      "/lpms_ig1"
+    ],
+    "/imu/get_imu_data": [
+      "/lpms_ig1"
+    ],
+    "/imu/set_streaming_mode": [
+      "/lpms_ig1"
+    ],
+    "/imu/set_command_mode": [
+      "/lpms_ig1"
+    ],
+    "/pointcloud_to_laserscan_for_bypass/get_loggers": [
+      "/pointcloud_to_laserscan_for_bypass"
+    ],
+    "/pointcloud_to_laserscan_for_bypass/set_logger_level": [
+      "/pointcloud_to_laserscan_for_bypass"
+    ],
+    "/M1_rslidar_state_publisher/get_loggers": [
+      "/M1_rslidar_state_publisher"
+    ],
+    "/M1_rslidar_state_publisher/set_logger_level": [
+      "/M1_rslidar_state_publisher"
+    ],
+    "/pointcloud_to_laserscan_for_obstacle/get_loggers": [
+      "/pointcloud_to_laserscan_for_obstacle"
+    ],
+    "/rslidar_sdk_node/get_loggers": [
+      "/rslidar_sdk_node"
+    ],
+    "/pointcloud_to_laserscan_for_obstacle/set_logger_level": [
+      "/pointcloud_to_laserscan_for_obstacle"
+    ],
+    "/rslidar_sdk_node/set_logger_level": [
+      "/rslidar_sdk_node"
+    ],
+    "/obstacle_detector/get_loggers": [
+      "/obstacle_detector"
+    ],
+    "/rockbot_nodelet_manager/get_loggers": [
+      "/rockbot_nodelet_manager"
+    ],
+    "/rockbot_nodelet_manager/set_logger_level": [
+      "/rockbot_nodelet_manager"
+    ],
+    "/obstacle_detector/set_logger_level": [
+      "/obstacle_detector"
+    ],
+    "/pointcloud_to_laserscan_for_landmark/get_loggers": [
+      "/pointcloud_to_laserscan_for_landmark"
+    ],
+    "/pointcloud_to_laserscan_for_landmark/set_logger_level": [
+      "/pointcloud_to_laserscan_for_landmark"
+    ],
+    "/rockbot_nodelet_manager/load_nodelet": [
+      "/rockbot_nodelet_manager"
+    ],
+    "/rockbot_nodelet_manager/unload_nodelet": [
+      "/rockbot_nodelet_manager"
+    ],
+    "/rockbot_nodelet_manager/list": [
+      "/rockbot_nodelet_manager"
+    ],
+    "/parking_controller_node/get_loggers": [
+      "/parking_controller_node"
+    ],
+    "/parking_controller_node/set_logger_level": [
+      "/parking_controller_node"
+    ],
+    "/map_server/get_loggers": [
+      "/map_server"
+    ],
+    "/map_server/set_logger_level": [
+      "/map_server"
+    ],
+    "/static_map": [
+      "/map_server"
+    ],
+    "/change_map": [
+      "/map_server"
+    ],
+    "/move_base/get_loggers": [
+      "/move_base"
+    ],
+    "/pathFollower/get_loggers": [
+      "/pathFollower"
+    ],
+    "/pathFollower/set_logger_level": [
+      "/pathFollower"
+    ],
+    "/move_base/set_logger_level": [
+      "/move_base"
+    ],
+    "/rockbot_navigation_node/get_loggers": [
+      "/rockbot_navigation_node"
+    ],
+    "/rockbot_navigation_node/set_logger_level": [
+      "/rockbot_navigation_node"
+    ],
+    "/pathFollower/set_parameters": [
+      "/pathFollower"
+    ],
+    "/localPlanner/get_loggers": [
+      "/localPlanner"
+    ],
+    "/localPlanner/set_logger_level": [
+      "/localPlanner"
+    ],
+    "/laser_landmark_detector_node/get_loggers": [
+      "/laser_landmark_detector_node"
+    ],
+    "/laser_landmark_detector_node/set_logger_level": [
+      "/laser_landmark_detector_node"
+    ],
+    "/rk_visualizer/get_loggers": [
+      "/rk_visualizer"
+    ],
+    "/rk_visualizer/set_logger_level": [
+      "/rk_visualizer"
+    ],
+    "/rockbot_lio_localization_node/get_loggers": [
+      "/rockbot_lio_localization_node"
+    ],
+    "/rockbot_lio_localization_node/set_logger_level": [
+      "/rockbot_lio_localization_node"
+    ],
+    "/keyframe": [
+      "/rockbot_lio_localization_node"
+    ],
+    "/relocalization": [
+      "/rockbot_lio_localization_node"
+    ],
+    "/move_base/global_costmap/static_map/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/global_costmap/obstacle_layer/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/global_costmap/inflation_layer/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/global_costmap/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/local_costmap/obstacle_layer/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/local_costmap/inflation_layer/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/local_costmap/set_parameters": [
+      "/move_base"
+    ],
+    "/rk_visualizer/reload_shaders": [
+      "/rk_visualizer"
+    ],
+    "/rk_visualizer/load_config": [
+      "/rk_visualizer"
+    ],
+    "/rk_visualizer/load_config_discarding_changes": [
+      "/rk_visualizer"
+    ],
+    "/rk_visualizer/save_config": [
+      "/rk_visualizer"
+    ],
+    "/move_base/RkLocalPlanner/costmap_converter/CostmapToPolygonsDBSMCCH/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/RkLocalPlanner/set_parameters": [
+      "/move_base"
+    ],
+    "/move_base/make_plan": [
+      "/move_base"
+    ],
+    "/move_base/clear_costmaps": [
+      "/move_base"
+    ],
+    "/move_base/set_parameters": [
+      "/move_base"
+    ]
+  },
+  "python_modules": {
+    "rospy": true,
+    "cv2": true,
+    "numpy": true,
+    "torch": false,
+    "ultralytics": false,
+    "tensorrt": true
+  },
+  "sample_duration_s": 10.009109375998378,
+  "samples": {
+    "/lidar_points": {
+      "count": 100,
+      "stamp": 1791789331.534568,
+      "frame": "lidar_link",
+      "width": 1,
+      "height": 24541,
+      "fields": [
+        "x",
+        "y",
+        "z",
+        "intensity",
+        "ring",
+        "timestamp"
+      ]
+    },
+    "/imu/data": {
+      "count": 1001,
+      "stamp": 1791789331.7120807,
+      "frame": "imu_link"
+    },
+    "/current_pose": {
+      "count": 100,
+      "stamp": 1791789331.6463103,
+      "frame": "map",
+      "position": [
+        674956358.0206138,
+        -1259936203.994721,
+        -359344484.7473635
+      ],
+      "orientation": [
+        0.0937809338746691,
+        0.031469767929163596,
+        -0.08919120409554293,
+        0.9910901670686006
+      ]
+    },
+    "/odom": {
+      "count": 100,
+      "stamp": 1791789331.6463103,
+      "frame": "map",
+      "position": [
+        674956358.0206138,
+        -1259936203.994721,
+        -359344484.7473635
+      ],
+      "orientation": [
+        0.0937809338746691,
+        0.031469767929163596,
+        -0.08919120409554293,
+        0.9910901670686006
+      ]
+    },
+    "/wheel_odom": {
+      "count": 0
+    },
+    "/pose_estimate_W_R": {
+      "count": 101,
+      "x": 0.0,
+      "y": -0.0,
+      "theta": -0.0
+    },
+    "/tf": {
+      "count": 100,
+      "transforms": {
+        "base_link": {
+          "parent": "map",
+          "translation": [
+            674956358.0206138,
+            -1259936203.994721,
+            -359344484.7473635
+          ],
+          "rotation": [
+            0.0937809338746691,
+            0.031469767929163596,
+            -0.08919120409554293,
+            0.9910901670686006
+          ]
+        }
+      }
+    },
+    "/tf_static": {
+      "count": 1,
+      "transforms": {
+        "head_link": {
+          "parent": "base_link",
+          "translation": [
+            0.3475,
+            0.0,
+            0.05
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "lidar_link": {
+          "parent": "head_link",
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "imu_link": {
+          "parent": "base_link",
+          "translation": [
+            0.219,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "/location_state": {
+      "count": 0
+    },
+    "/navigation_state": {
+      "count": 0
+    },
+    "/map_id": {
+      "count": 1,
+      "data": 0
+    },
+    "/fitness_score": {
+      "count": 34,
+      "data": 0.0
+    },
+    "/goal_reach": {
+      "count": 0
+    },
+    "/waypoint_reached": {
+      "count": 0
+    },
+    "/obstacle_distance": {
+      "count": 101,
+      "data": 0.2704647481441498
+    }
+  }
+}

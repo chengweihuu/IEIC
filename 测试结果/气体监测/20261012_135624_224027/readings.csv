@@ -1,0 +1,9 @@
+﻿received_at,source_log_time,channel,value,raw_value,gas_power,error_code,crc_ok,status,unit,packet_hex
+2026-10-12T13:56:45.006+08:00,2026-10-12 13:57:47,温度,3170,317,1,0,True,protocol_ok_units_unverified,unverified,5B5B0C010300013D01F501CE
+2026-10-12T13:56:45.006+08:00,2026-10-12 13:57:47,湿度,5010,501,1,0,True,protocol_ok_units_unverified,unverified,5B5B0C010300013D01F501CE
+2026-10-12T13:56:46.208+08:00,2026-10-12 13:57:49,氧气,2090,209,1,0,True,protocol_ok_units_unverified,unverified,5B5B0C01050001D100000016
+2026-10-12T13:57:05.044+08:00,2026-10-12 13:58:07,CO,0,0,0,0,True,protocol_ok_units_unverified,unverified,5B5B0C010A00000000000019
+2026-10-12T13:57:45.018+08:00,2026-10-12 13:58:47,温度,3150,315,1,0,True,protocol_ok_units_unverified,unverified,5B5B0C010300013B01490254
+2026-10-12T13:57:45.018+08:00,2026-10-12 13:58:47,湿度,5850,585,1,0,True,protocol_ok_units_unverified,unverified,5B5B0C010300013B01490254
+2026-10-12T13:57:46.320+08:00,2026-10-12 13:58:49,氧气,2090,209,1,0,True,protocol_ok_units_unverified,unverified,5B5B0C01050001D100000016
+2026-10-12T13:58:05.054+08:00,2026-10-12 13:59:07,CO,0,0,0,0,True,protocol_ok_units_unverified,unverified,5B5B0C010A00000000000019

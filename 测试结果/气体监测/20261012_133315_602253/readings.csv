@@ -1,0 +1,2 @@
+﻿received_at,source_log_time,channel,value,raw_value,gas_power,error_code,crc_ok,status,unit,packet_hex
+2026-10-12T13:33:32.133+08:00,2026-10-12 13:34:34,CO,0,0,0,0,True,protocol_ok_units_unverified,unverified,5B5B0C010A00000000000019
